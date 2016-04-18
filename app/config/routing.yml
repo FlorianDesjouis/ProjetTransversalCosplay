@@ -1,0 +1,7 @@
+cosplay_blog:
+    resource: "@CosplayBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
