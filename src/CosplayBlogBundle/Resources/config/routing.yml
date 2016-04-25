@@ -1,3 +1,0 @@
-cosplay_blog_homepage:
-    path:     /
-    defaults: { _controller: CosplayBlogBundle:Default:index }

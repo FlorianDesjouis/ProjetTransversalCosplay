@@ -1,4 +1,0 @@
-services:
-#    cosplay_blog.example:
-#        class: CosplayBlogBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
