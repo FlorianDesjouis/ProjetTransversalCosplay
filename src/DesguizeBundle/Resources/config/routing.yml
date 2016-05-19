@@ -1,0 +1,3 @@
+desguize_homepage:
+    path:     /
+    defaults: { _controller: DesguizeBundle:Default:index }
