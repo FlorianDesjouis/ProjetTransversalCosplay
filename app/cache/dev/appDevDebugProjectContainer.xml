@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">C:\wamp\www\desguize\app</parameter>
+    <parameter key="kernel.root_dir">C:\wamp\www\Desguize\app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">C:\wamp\www\desguize\app\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\wamp\www\desguize\app\logs</parameter>
+    <parameter key="kernel.cache_dir">C:\wamp\www\Desguize\app\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">C:\wamp\www\Desguize\app\logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
       <parameter key="MonologBundle">Symfony\Bundle\MonologBundle\MonologBundle</parameter>
-      <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="SwiftmailerBundle">Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="AppBundle">AppBundle\AppBundle</parameter>
       <parameter key="DesguizeBundle">DesguizeBundle\DesguizeBundle</parameter>
+      <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
+      <parameter key="FOSRestBundle">FOS\RestBundle\FOSRestBundle</parameter>
+      <parameter key="FOSCommentBundle">FOS\CommentBundle\FOSCommentBundle</parameter>
+      <parameter key="JMSSerializerBundle">JMS\SerializerBundle\JMSSerializerBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -34,7 +36,7 @@
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
     <parameter key="mailer_password">null</parameter>
-    <parameter key="secret">d68cf35b37d5ec272730f1e21a85c423316fcfae</parameter>
+    <parameter key="secret">724be845f9d4770896b59e827ad845508f8245cd</parameter>
     <parameter key="locale">fr</parameter>
     <parameter key="controller_resolver.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver</parameter>
     <parameter key="controller_name_converter.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser</parameter>
@@ -84,7 +86,7 @@
     <parameter key="translation.extractor.class">Symfony\Component\Translation\Extractor\ChainExtractor</parameter>
     <parameter key="translation.writer.class">Symfony\Component\Translation\Writer\TranslationWriter</parameter>
     <parameter key="property_accessor.class">Symfony\Component\PropertyAccess\PropertyAccessor</parameter>
-    <parameter key="kernel.secret">d68cf35b37d5ec272730f1e21a85c423316fcfae</parameter>
+    <parameter key="kernel.secret">724be845f9d4770896b59e827ad845508f8245cd</parameter>
     <parameter key="kernel.http_method_override">true</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
     <parameter key="kernel.trusted_proxies" type="collection"/>
@@ -104,7 +106,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:\wamp\www\desguize\app\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">C:\wamp\www\Desguize\app\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="security.secure_random.class">Symfony\Component\Security\Core\Util\SecureRandom</parameter>
     <parameter key="form.resolved_type_factory.class">Symfony\Component\Form\ResolvedFormTypeFactory</parameter>
@@ -162,7 +164,7 @@
     <parameter key="data_collector.form.extractor.class">Symfony\Component\Form\Extension\DataCollector\FormDataExtractor</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\wamp\www\desguize\app\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:\wamp\www\Desguize\app\cache\dev/profiler</parameter>
     <parameter key="profiler.storage.username"></parameter>
     <parameter key="profiler.storage.password"></parameter>
     <parameter key="profiler.storage.lifetime">86400</parameter>
@@ -186,7 +188,7 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">C:\wamp\www\desguize\app/config/routing_dev.yml</parameter>
+    <parameter key="router.resource">C:\wamp\www\Desguize\app/config/routing_dev.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
@@ -197,7 +199,7 @@
     <parameter key="debug.stopwatch.class">Symfony\Component\Stopwatch\Stopwatch</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.event_dispatcher.class">Symfony\Component\HttpKernel\Debug\TraceableEventDispatcher</parameter>
-    <parameter key="debug.container.dump">C:\wamp\www\desguize\app\cache\dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:\wamp\www\Desguize\app\cache\dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="debug.controller_resolver.class">Symfony\Component\HttpKernel\Controller\TraceableControllerResolver</parameter>
     <parameter key="security.context.class">Symfony\Component\Security\Core\SecurityContext</parameter>
     <parameter key="security.user_checker.class">Symfony\Component\Security\Core\User\UserChecker</parameter>
@@ -311,6 +313,7 @@
     <parameter key="monolog.handler.console.class">Symfony\Bridge\Monolog\Handler\ConsoleHandler</parameter>
     <parameter key="monolog.handler.group.class">Monolog\Handler\GroupHandler</parameter>
     <parameter key="monolog.handler.buffer.class">Monolog\Handler\BufferHandler</parameter>
+    <parameter key="monolog.handler.deduplication.class">Monolog\Handler\DeduplicationHandler</parameter>
     <parameter key="monolog.handler.rotating_file.class">Monolog\Handler\RotatingFileHandler</parameter>
     <parameter key="monolog.handler.syslog.class">Monolog\Handler\SyslogHandler</parameter>
     <parameter key="monolog.handler.syslogudp.class">Monolog\Handler\SyslogUdpHandler</parameter>
@@ -345,6 +348,7 @@
     <parameter key="monolog.mongo.client.class">MongoClient</parameter>
     <parameter key="monolog.handler.elasticsearch.class">Monolog\Handler\ElasticSearchHandler</parameter>
     <parameter key="monolog.elastica.client.class">Elastica\Client</parameter>
+    <parameter key="monolog.use_microseconds">true</parameter>
     <parameter key="monolog.swift_mailer.handlers" type="collection"/>
     <parameter key="monolog.handlers_to_channels" type="collection">
       <parameter key="monolog.handler.console" type="collection">
@@ -360,47 +364,6 @@
           <parameter>event</parameter>
         </parameter>
       </parameter>
-    </parameter>
-    <parameter key="fos_user.backend_type_orm">true</parameter>
-    <parameter key="fos_user.security.interactive_login_listener.class">FOS\UserBundle\EventListener\LastLoginListener</parameter>
-    <parameter key="fos_user.security.login_manager.class">FOS\UserBundle\Security\LoginManager</parameter>
-    <parameter key="fos_user.resetting.email.template">FOSUserBundle:Resetting:email.txt.twig</parameter>
-    <parameter key="fos_user.registration.confirmation.template">FOSUserBundle:Registration:email.txt.twig</parameter>
-    <parameter key="fos_user.storage">orm</parameter>
-    <parameter key="fos_user.firewall_name">main</parameter>
-    <parameter key="fos_user.model_manager_name">null</parameter>
-    <parameter key="fos_user.model.user.class">DesguizeBundle\Entity\User</parameter>
-    <parameter key="fos_user.profile.form.type">FOS\UserBundle\Form\Type\ProfileFormType</parameter>
-    <parameter key="fos_user.profile.form.name">fos_user_profile_form</parameter>
-    <parameter key="fos_user.profile.form.validation_groups" type="collection">
-      <parameter>Profile</parameter>
-      <parameter>Default</parameter>
-    </parameter>
-    <parameter key="fos_user.registration.confirmation.from_email" type="collection">
-      <parameter key="webmaster@example.com">webmaster</parameter>
-    </parameter>
-    <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
-    <parameter key="fos_user.registration.form.type">FOS\UserBundle\Form\Type\RegistrationFormType</parameter>
-    <parameter key="fos_user.registration.form.name">fos_user_registration_form</parameter>
-    <parameter key="fos_user.registration.form.validation_groups" type="collection">
-      <parameter>Registration</parameter>
-      <parameter>Default</parameter>
-    </parameter>
-    <parameter key="fos_user.change_password.form.type">FOS\UserBundle\Form\Type\ChangePasswordFormType</parameter>
-    <parameter key="fos_user.change_password.form.name">fos_user_change_password_form</parameter>
-    <parameter key="fos_user.change_password.form.validation_groups" type="collection">
-      <parameter>ChangePassword</parameter>
-      <parameter>Default</parameter>
-    </parameter>
-    <parameter key="fos_user.resetting.email.from_email" type="collection">
-      <parameter key="webmaster@example.com">webmaster</parameter>
-    </parameter>
-    <parameter key="fos_user.resetting.token_ttl">86400</parameter>
-    <parameter key="fos_user.resetting.form.type">FOS\UserBundle\Form\Type\ResettingFormType</parameter>
-    <parameter key="fos_user.resetting.form.name">fos_user_resetting_form</parameter>
-    <parameter key="fos_user.resetting.form.validation_groups" type="collection">
-      <parameter>ResetPassword</parameter>
-      <parameter>Default</parameter>
     </parameter>
     <parameter key="swiftmailer.class">Swift_Mailer</parameter>
     <parameter key="swiftmailer.transport.sendmail.class">Swift_Transport_SendmailTransport</parameter>
@@ -426,7 +389,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">C:\wamp\www\desguize\app\cache\dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">C:\wamp\www\Desguize\app\cache\dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -544,7 +507,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\wamp\www\desguize\app\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:\wamp\www\Desguize\app\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -556,6 +519,161 @@
     <parameter key="sensio_framework_extra.converter.doctrine.class">Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter</parameter>
     <parameter key="sensio_framework_extra.converter.datetime.class">Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DateTimeParamConverter</parameter>
     <parameter key="sensio_framework_extra.view.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener</parameter>
+    <parameter key="fos_user.backend_type_orm">true</parameter>
+    <parameter key="fos_user.security.interactive_login_listener.class">FOS\UserBundle\EventListener\LastLoginListener</parameter>
+    <parameter key="fos_user.security.login_manager.class">FOS\UserBundle\Security\LoginManager</parameter>
+    <parameter key="fos_user.resetting.email.template">FOSUserBundle:Resetting:email.txt.twig</parameter>
+    <parameter key="fos_user.registration.confirmation.template">FOSUserBundle:Registration:email.txt.twig</parameter>
+    <parameter key="fos_user.storage">orm</parameter>
+    <parameter key="fos_user.firewall_name">main</parameter>
+    <parameter key="fos_user.model_manager_name">null</parameter>
+    <parameter key="fos_user.model.user.class">DesguizeBundle\Entity\User</parameter>
+    <parameter key="fos_user.profile.form.type">DesguizeBundle\Form\ProfileFormType</parameter>
+    <parameter key="fos_user.profile.form.name">fos_user_profile_form</parameter>
+    <parameter key="fos_user.profile.form.validation_groups" type="collection">
+      <parameter>Profile</parameter>
+      <parameter>Default</parameter>
+    </parameter>
+    <parameter key="fos_user.registration.confirmation.from_email" type="collection">
+      <parameter key="webmaster@example.com">webmaster</parameter>
+    </parameter>
+    <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
+    <parameter key="fos_user.registration.form.type">DesguizeBundle\Form\RegistrationType</parameter>
+    <parameter key="fos_user.registration.form.name">fos_user_registration_form</parameter>
+    <parameter key="fos_user.registration.form.validation_groups" type="collection">
+      <parameter>Registration</parameter>
+      <parameter>Default</parameter>
+    </parameter>
+    <parameter key="fos_user.change_password.form.type">FOS\UserBundle\Form\Type\ChangePasswordFormType</parameter>
+    <parameter key="fos_user.change_password.form.name">fos_user_change_password_form</parameter>
+    <parameter key="fos_user.change_password.form.validation_groups" type="collection">
+      <parameter>ChangePassword</parameter>
+      <parameter>Default</parameter>
+    </parameter>
+    <parameter key="fos_user.resetting.email.from_email" type="collection">
+      <parameter key="webmaster@example.com">webmaster</parameter>
+    </parameter>
+    <parameter key="fos_user.resetting.token_ttl">86400</parameter>
+    <parameter key="fos_user.resetting.form.type">FOS\UserBundle\Form\Type\ResettingFormType</parameter>
+    <parameter key="fos_user.resetting.form.name">fos_user_resetting_form</parameter>
+    <parameter key="fos_user.resetting.form.validation_groups" type="collection">
+      <parameter>ResetPassword</parameter>
+      <parameter>Default</parameter>
+    </parameter>
+    <parameter key="fos_rest.serializer.exclusion_strategy.version"></parameter>
+    <parameter key="fos_rest.serializer.exclusion_strategy.groups"></parameter>
+    <parameter key="fos_rest.view_handler.jsonp.callback_param"></parameter>
+    <parameter key="fos_rest.view.exception_wrapper_handler">FOS\RestBundle\View\ExceptionWrapperHandler</parameter>
+    <parameter key="fos_rest.view_handler.default.class">FOS\RestBundle\View\ViewHandler</parameter>
+    <parameter key="fos_rest.view_handler.jsonp.class">FOS\RestBundle\View\JsonpHandler</parameter>
+    <parameter key="fos_rest.serializer.exception_wrapper_serialize_handler.class">FOS\RestBundle\Serializer\ExceptionWrapperSerializeHandler</parameter>
+    <parameter key="fos_rest.routing.loader.controller.class">FOS\RestBundle\Routing\Loader\RestRouteLoader</parameter>
+    <parameter key="fos_rest.routing.loader.yaml_collection.class">FOS\RestBundle\Routing\Loader\RestYamlCollectionLoader</parameter>
+    <parameter key="fos_rest.routing.loader.xml_collection.class">FOS\RestBundle\Routing\Loader\RestXmlCollectionLoader</parameter>
+    <parameter key="fos_rest.routing.loader.processor.class">FOS\RestBundle\Routing\Loader\RestRouteProcessor</parameter>
+    <parameter key="fos_rest.routing.loader.reader.controller.class">FOS\RestBundle\Routing\Loader\Reader\RestControllerReader</parameter>
+    <parameter key="fos_rest.routing.loader.reader.action.class">FOS\RestBundle\Routing\Loader\Reader\RestActionReader</parameter>
+    <parameter key="fos_rest.format_negotiator.class">FOS\RestBundle\Util\FormatNegotiator</parameter>
+    <parameter key="fos_rest.inflector.class">FOS\RestBundle\Util\Inflector\DoctrineInflector</parameter>
+    <parameter key="fos_rest.request_matcher.class">Symfony\Component\HttpFoundation\RequestMatcher</parameter>
+    <parameter key="fos_rest.violation_formatter.class">FOS\RestBundle\Util\ViolationFormatter</parameter>
+    <parameter key="fos_rest.request.param_fetcher.class">FOS\RestBundle\Request\ParamFetcher</parameter>
+    <parameter key="fos_rest.request.param_fetcher.reader.class">FOS\RestBundle\Request\ParamReader</parameter>
+    <parameter key="fos_rest.cache_dir">C:\wamp\www\Desguize\app\cache\dev/fos_rest</parameter>
+    <parameter key="fos_rest.routing.loader.default_format">null</parameter>
+    <parameter key="fos_rest.routing.loader.include_format">true</parameter>
+    <parameter key="fos_rest.serializer.serialize_null">false</parameter>
+    <parameter key="fos_rest.exception.codes" type="collection"/>
+    <parameter key="fos_rest.exception.messages" type="collection"/>
+    <parameter key="fos_rest.converter.request_body.validation_errors_argument">validationErrors</parameter>
+    <parameter key="fos_rest.mime_types" type="collection"/>
+    <parameter key="fos_rest.formats" type="collection">
+      <parameter key="json">false</parameter>
+      <parameter key="xml">false</parameter>
+      <parameter key="html">true</parameter>
+    </parameter>
+    <parameter key="fos_rest.force_redirects" type="collection">
+      <parameter key="html">302</parameter>
+    </parameter>
+    <parameter key="fos_rest.failed_validation">400</parameter>
+    <parameter key="fos_rest.empty_content">204</parameter>
+    <parameter key="fos_rest.serialize_null">false</parameter>
+    <parameter key="fos_rest.default_engine">twig</parameter>
+    <parameter key="fos_rest.normalizer.camel_keys.class">FOS\RestBundle\Normalizer\CamelKeysNormalizer</parameter>
+    <parameter key="fos_rest.decoder.json.class">FOS\RestBundle\Decoder\JsonDecoder</parameter>
+    <parameter key="fos_rest.decoder.jsontoform.class">FOS\RestBundle\Decoder\JsonToFormDecoder</parameter>
+    <parameter key="fos_rest.decoder.xml.class">FOS\RestBundle\Decoder\XmlDecoder</parameter>
+    <parameter key="fos_rest.decoder_provider.class">FOS\RestBundle\Decoder\ContainerDecoderProvider</parameter>
+    <parameter key="fos_rest.body_listener.class">FOS\RestBundle\EventListener\BodyListener</parameter>
+    <parameter key="fos_rest.throw_exception_on_unsupported_content_type">false</parameter>
+    <parameter key="fos_rest.body_default_format">null</parameter>
+    <parameter key="fos_rest.decoders" type="collection">
+      <parameter key="json">fos_rest.decoder.json</parameter>
+      <parameter key="xml">fos_rest.decoder.xml</parameter>
+    </parameter>
+    <parameter key="fos_comment.model.thread.class">FOS\CommentBundle\Document\Thread</parameter>
+    <parameter key="fos_comment.model.comment.class">FOS\CommentBundle\Document\Comment</parameter>
+    <parameter key="fos_comment.model.vote.class">FOS\CommentBundle\Entity\Vote</parameter>
+    <parameter key="fos_comment.manager.thread.default.class">FOS\CommentBundle\Entity\ThreadManager</parameter>
+    <parameter key="fos_comment.manager.comment.default.class">FOS\CommentBundle\Entity\CommentManager</parameter>
+    <parameter key="fos_comment.manager.vote.default.class">FOS\CommentBundle\Entity\VoteManager</parameter>
+    <parameter key="fos_comment.listener.comment_vote_score.class">FOS\CommentBundle\EventListener\CommentVoteScoreListener</parameter>
+    <parameter key="fos_comment.listener.thread_counters.class">FOS\CommentBundle\EventListener\ThreadCountersListener</parameter>
+    <parameter key="fos_comment.listener.thread_permalink.class">FOS\CommentBundle\EventListener\ThreadPermalinkListener</parameter>
+    <parameter key="fos_comment.listener.comment_blamer.class">FOS\CommentBundle\EventListener\CommentBlamerListener</parameter>
+    <parameter key="fos_comment.listener.vote_blamer.class">FOS\CommentBundle\EventListener\VoteBlamerListener</parameter>
+    <parameter key="fos_comment.listener.closed_threads.class">FOS\CommentBundle\EventListener\ClosedThreadListener</parameter>
+    <parameter key="fos_comment.sorting_factory.class">FOS\CommentBundle\Sorting\SortingFactory</parameter>
+    <parameter key="fos_comment.sorter.date.class">FOS\CommentBundle\Sorting\DateSorting</parameter>
+    <parameter key="fos_comment.template.engine">twig</parameter>
+    <parameter key="fos_comment.model_manager_name">null</parameter>
+    <parameter key="fos_comment.form.comment.type">fos_comment_comment</parameter>
+    <parameter key="fos_comment.form.comment.name">fos_comment_comment</parameter>
+    <parameter key="fos_comment.form.thread.type">fos_comment_thread</parameter>
+    <parameter key="fos_comment.form.thread.name">fos_comment_thread</parameter>
+    <parameter key="fos_comment.form.commentable_thread.type">fos_comment_commentable_thread</parameter>
+    <parameter key="fos_comment.form.commentable_thread.name">fos_comment_commentable_thread</parameter>
+    <parameter key="fos_comment.form.delete_comment.type">fos_comment_delete_comment</parameter>
+    <parameter key="fos_comment.form.delete_comment.name">fos_comment_delete_comment</parameter>
+    <parameter key="fos_comment.form.vote.type">fos_comment_vote</parameter>
+    <parameter key="fos_comment.form.vote.name">fos_comment_vote</parameter>
+    <parameter key="fos_comment.sorting_factory.default_sorter">date_desc</parameter>
+    <parameter key="jms_serializer.metadata.file_locator.class">Metadata\Driver\FileLocator</parameter>
+    <parameter key="jms_serializer.metadata.annotation_driver.class">JMS\Serializer\Metadata\Driver\AnnotationDriver</parameter>
+    <parameter key="jms_serializer.metadata.chain_driver.class">Metadata\Driver\DriverChain</parameter>
+    <parameter key="jms_serializer.metadata.yaml_driver.class">JMS\Serializer\Metadata\Driver\YamlDriver</parameter>
+    <parameter key="jms_serializer.metadata.xml_driver.class">JMS\Serializer\Metadata\Driver\XmlDriver</parameter>
+    <parameter key="jms_serializer.metadata.php_driver.class">JMS\Serializer\Metadata\Driver\PhpDriver</parameter>
+    <parameter key="jms_serializer.metadata.doctrine_type_driver.class">JMS\Serializer\Metadata\Driver\DoctrineTypeDriver</parameter>
+    <parameter key="jms_serializer.metadata.doctrine_phpcr_type_driver.class">JMS\Serializer\Metadata\Driver\DoctrinePHPCRTypeDriver</parameter>
+    <parameter key="jms_serializer.metadata.lazy_loading_driver.class">Metadata\Driver\LazyLoadingDriver</parameter>
+    <parameter key="jms_serializer.metadata.metadata_factory.class">Metadata\MetadataFactory</parameter>
+    <parameter key="jms_serializer.metadata.cache.file_cache.class">Metadata\Cache\FileCache</parameter>
+    <parameter key="jms_serializer.event_dispatcher.class">JMS\Serializer\EventDispatcher\LazyEventDispatcher</parameter>
+    <parameter key="jms_serializer.camel_case_naming_strategy.class">JMS\Serializer\Naming\CamelCaseNamingStrategy</parameter>
+    <parameter key="jms_serializer.serialized_name_annotation_strategy.class">JMS\Serializer\Naming\SerializedNameAnnotationStrategy</parameter>
+    <parameter key="jms_serializer.cache_naming_strategy.class">JMS\Serializer\Naming\CacheNamingStrategy</parameter>
+    <parameter key="jms_serializer.doctrine_object_constructor.class">JMS\Serializer\Construction\DoctrineObjectConstructor</parameter>
+    <parameter key="jms_serializer.unserialize_object_constructor.class">JMS\Serializer\Construction\UnserializeObjectConstructor</parameter>
+    <parameter key="jms_serializer.version_exclusion_strategy.class">JMS\Serializer\Exclusion\VersionExclusionStrategy</parameter>
+    <parameter key="jms_serializer.serializer.class">JMS\Serializer\Serializer</parameter>
+    <parameter key="jms_serializer.twig_extension.class">JMS\Serializer\Twig\SerializerExtension</parameter>
+    <parameter key="jms_serializer.templating.helper.class">JMS\SerializerBundle\Templating\SerializerHelper</parameter>
+    <parameter key="jms_serializer.json_serialization_visitor.class">JMS\Serializer\JsonSerializationVisitor</parameter>
+    <parameter key="jms_serializer.json_serialization_visitor.options">0</parameter>
+    <parameter key="jms_serializer.json_deserialization_visitor.class">JMS\Serializer\JsonDeserializationVisitor</parameter>
+    <parameter key="jms_serializer.xml_serialization_visitor.class">JMS\Serializer\XmlSerializationVisitor</parameter>
+    <parameter key="jms_serializer.xml_deserialization_visitor.class">JMS\Serializer\XmlDeserializationVisitor</parameter>
+    <parameter key="jms_serializer.xml_deserialization_visitor.doctype_whitelist" type="collection"/>
+    <parameter key="jms_serializer.yaml_serialization_visitor.class">JMS\Serializer\YamlSerializationVisitor</parameter>
+    <parameter key="jms_serializer.handler_registry.class">JMS\Serializer\Handler\LazyHandlerRegistry</parameter>
+    <parameter key="jms_serializer.datetime_handler.class">JMS\Serializer\Handler\DateHandler</parameter>
+    <parameter key="jms_serializer.array_collection_handler.class">JMS\Serializer\Handler\ArrayCollectionHandler</parameter>
+    <parameter key="jms_serializer.php_collection_handler.class">JMS\Serializer\Handler\PhpCollectionHandler</parameter>
+    <parameter key="jms_serializer.form_error_handler.class">JMS\Serializer\Handler\FormErrorHandler</parameter>
+    <parameter key="jms_serializer.constraint_violation_handler.class">JMS\Serializer\Handler\ConstraintViolationHandler</parameter>
+    <parameter key="jms_serializer.doctrine_proxy_subscriber.class">JMS\Serializer\EventDispatcher\Subscriber\DoctrineProxySubscriber</parameter>
+    <parameter key="jms_serializer.stopwatch_subscriber.class">JMS\SerializerBundle\Serializer\StopwatchEventSubscriber</parameter>
     <parameter key="web_profiler.controller.profiler.class">Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController</parameter>
     <parameter key="web_profiler.controller.router.class">Symfony\Bundle\WebProfilerBundle\Controller\RouterController</parameter>
     <parameter key="web_profiler.controller.exception.class">Symfony\Bundle\WebProfilerBundle\Controller\ExceptionController</parameter>
@@ -635,6 +753,12 @@
     </parameter>
   </parameters>
   <services>
+    <service id="desuser.form.registration" class="DesguizeBundle\Form\RegistrationType">
+      <tag name="form.type" alias="des_user_registration"/>
+    </service>
+    <service id="desuser.form.profile" class="DesguizeBundle\Form\ProfileFormType">
+      <tag name="form.type" alias="des_user_profile"/>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -674,7 +798,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:\wamp\www\desguize\app/Resources</argument>
+                <argument>C:\wamp\www\Desguize\app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -701,7 +825,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:\wamp\www\desguize\app/Resources</argument>
+                <argument>C:\wamp\www\Desguize\app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -714,7 +838,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>C:\wamp\www\desguize\app</argument>
+                <argument>C:\wamp\www\Desguize\app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -745,10 +869,10 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>C:\wamp\www\desguize\app/Resources</argument>
+      <argument>C:\wamp\www\Desguize\app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
-      <argument>d68cf35b37d5ec272730f1e21a85c423316fcfae</argument>
+      <argument>724be845f9d4770896b59e827ad845508f8245cd</argument>
     </service>
     <service id="config_cache_factory" class="Symfony\Component\Config\ResourceCheckerConfigCacheFactory">
       <argument type="collection">
@@ -867,315 +991,343 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\desguize\app\cache\dev/translations</argument>
+        <argument key="cache_dir">C:\wamp\www\Desguize\app\cache\dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ar.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ar.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ar.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ar.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ar.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ar.yml</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.az.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.az.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.bg.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.bg.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.bg.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.bg.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.bg.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.bg.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.bg.yml</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ca.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ca.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ca.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ca.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ca.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ca.yml</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.cs.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.cs.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.cs.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.cs.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.cs.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.cs.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.cs.yml</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cy.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.da.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.da.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.da.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.da.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.da.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.da.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.da.yml</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.de.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.de.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.de.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.de.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.de.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.de.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.de.yml</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.el.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.el.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.el.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.el.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.el.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.el.yml</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.en.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.en.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.en.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.en.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.en.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.en.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.en.yml</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.es.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.es.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.es.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.es.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.es.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.es.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.es.yml</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.et.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.et.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.et.yml</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.eu.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.eu.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.eu.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.eu.yml</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fa.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fa.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fa.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fa.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fa.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fa.yml</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fi.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fi.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fi.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fi.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fi.yml</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fr.yml</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.gl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.he.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.he.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.he.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.he.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.he.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.he.yml</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hr.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hr.yml</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hu.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hu.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hu.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hu.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hu.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hu.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.hu.yml</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.id.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.id.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.id.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.id.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.id.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.id.yml</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.it.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.it.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.it.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.it.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.it.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.it.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.it.yml</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ja.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ja.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ja.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ja.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ja.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ja.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.ja.yml</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lb.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lb.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lb.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lb.yml</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lt.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lt.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lt.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lt.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lt.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lt.yml</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.mn.yml</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.nl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nl.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.nl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.nl.yml</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.no.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pl.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.pl.yml</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.pt.yml</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt_BR.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt_BR.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_BR.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt_BR.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt_BR.yml</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ro.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ro.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ro.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ro.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ro.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ro.yml</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ru.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ru.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ru.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ru.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ru.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ru.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.ru.yml</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sk.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sk.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sk.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sk.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sk.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sk.yml</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sl.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sl.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sl.yml</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sr_Cyrl.yml</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sr_Latn.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sr_Latn.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Latn.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sr_Latn.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sr_Latn.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sr_Latn.yml</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sv.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sv.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sv.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sv.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sv.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sv.yml</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.th.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.th.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.th.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.th.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.th.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.th.yml</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.tr.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.tr.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.tr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.tr.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.tr.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.tr.yml</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.uk.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.uk.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.uk.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.uk.yml</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.vi.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.vi.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.vi.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.vi.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.vi.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.vi.yml</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.zh_CN.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.zh_CN.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.zh_CN.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.zh_CN.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.zh_CN.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.zh_CN.yml</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_TW.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lv.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lv.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lv.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lv.yml</argument>
           </argument>
           <argument key="pt_PT" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_PT.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_PT.xlf</argument>
           </argument>
           <argument key="ua" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ua.xlf</argument>
+            <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ua.xlf</argument>
+          </argument>
+          <argument key="ky" type="collection">
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ky.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ky.yml</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nb.yml</argument>
-            <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nb.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nb.yml</argument>
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nb.yml</argument>
+          </argument>
+          <argument key="fa_IR" type="collection">
+            <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fa_IR.yml</argument>
           </argument>
         </argument>
       </argument>
@@ -1409,6 +1561,10 @@
           <service class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
             <argument type="service" id="service_container"/>
             <argument type="collection">
+              <argument key="des_user_registration">desuser.form.registration</argument>
+              <argument key="DesguizeBundle\Form\RegistrationType">desuser.form.registration</argument>
+              <argument key="des_user_profile">desuser.form.profile</argument>
+              <argument key="DesguizeBundle\Form\ProfileFormType">desuser.form.profile</argument>
               <argument key="form">form.type.form</argument>
               <argument key="Symfony\Component\Form\Extension\Core\Type\FormType">form.type.form</argument>
               <argument key="birthday">form.type.birthday</argument>
@@ -1471,6 +1627,8 @@
               <argument key="Symfony\Component\Form\Extension\Core\Type\ResetType">form.type.reset</argument>
               <argument key="currency">form.type.currency</argument>
               <argument key="Symfony\Component\Form\Extension\Core\Type\CurrencyType">form.type.currency</argument>
+              <argument key="entity">form.type.entity</argument>
+              <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType">form.type.entity</argument>
               <argument key="fos_user_username">fos_user.username_form_type</argument>
               <argument key="FOS\UserBundle\Form\Type\UsernameFormType">fos_user.username_form_type</argument>
               <argument key="fos_user_profile">fos_user.profile.form.type</argument>
@@ -1481,8 +1639,16 @@
               <argument key="FOS\UserBundle\Form\Type\ChangePasswordFormType">fos_user.change_password.form.type</argument>
               <argument key="fos_user_resetting">fos_user.resetting.form.type</argument>
               <argument key="FOS\UserBundle\Form\Type\ResettingFormType">fos_user.resetting.form.type</argument>
-              <argument key="entity">form.type.entity</argument>
-              <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType">form.type.entity</argument>
+              <argument key="fos_comment_comment">fos_comment.form_type.comment.default</argument>
+              <argument key="FOS\CommentBundle\Form\CommentType">fos_comment.form_type.comment.default</argument>
+              <argument key="fos_comment_commentable_thread">fos_comment.form_type.commentable_thread.default</argument>
+              <argument key="FOS\CommentBundle\Form\CommentableThreadType">fos_comment.form_type.commentable_thread.default</argument>
+              <argument key="fos_comment_delete_comment">fos_comment.form_type.delete_comment.default</argument>
+              <argument key="FOS\CommentBundle\Form\DeleteCommentType">fos_comment.form_type.delete_comment.default</argument>
+              <argument key="fos_comment_thread">fos_comment.form_type.thread.default</argument>
+              <argument key="FOS\CommentBundle\Form\ThreadType">fos_comment.form_type.thread.default</argument>
+              <argument key="fos_comment_vote">fos_comment.form_type.vote.default</argument>
+              <argument key="FOS\CommentBundle\Form\VoteType">fos_comment.form_type.vote.default</argument>
             </argument>
             <argument type="collection">
               <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="collection">
@@ -1686,7 +1852,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>C:\wamp\www\desguize\app\cache\dev</argument>
+      <argument>C:\wamp\www\Desguize\app\cache\dev</argument>
     </service>
     <service id="templating.helper.assets" class="Symfony\Bundle\FrameworkBundle\Templating\Helper\AssetsHelper">
       <tag name="templating.helper" alias="assets"/>
@@ -1725,8 +1891,9 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
-          <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
+          <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
+          <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
+          <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle\Resources\config\validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1737,17 +1904,17 @@
       </call>
       <call method="addObjectInitializers">
         <argument type="collection">
+          <argument type="service" id="doctrine.orm.validator_initializer"/>
           <argument type="service">
             <service class="FOS\UserBundle\Validator\Initializer" public="false">
               <tag name="validator.initializer"/>
               <argument type="service" id="fos_user.user_manager"/>
             </service>
           </argument>
-          <argument type="service" id="doctrine.orm.validator_initializer"/>
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
+        <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
       <factory class="Symfony\Component\Validator\Validation" method="createValidatorBuilder"/>
     </service>
@@ -1768,7 +1935,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:C:\wamp\www\desguize\app\cache\dev/profiler</argument>
+          <argument>file:C:\wamp\www\Desguize\app\cache\dev/profiler</argument>
           <argument></argument>
           <argument></argument>
           <argument>86400</argument>
@@ -1995,6 +2162,15 @@
               </service>
             </argument>
           </call>
+          <call method="addLoader">
+            <argument type="service" id="fos_rest.routing.loader.controller"/>
+          </call>
+          <call method="addLoader">
+            <argument type="service" id="fos_rest.routing.loader.yaml_collection"/>
+          </call>
+          <call method="addLoader">
+            <argument type="service" id="fos_rest.routing.loader.xml_collection"/>
+          </call>
         </service>
       </argument>
     </service>
@@ -2041,6 +2217,14 @@
           <argument>onKernelController</argument>
         </argument>
         <argument>0</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument>fos_rest.body_listener</argument>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>10</argument>
       </call>
       <call method="addSubscriberService">
         <argument>response_listener</argument>
@@ -2103,22 +2287,6 @@
         <argument>Symfony\Bridge\Monolog\Handler\ConsoleHandler</argument>
       </call>
       <call method="addSubscriberService">
-        <argument>fos_user.security.interactive_login_listener</argument>
-        <argument>FOS\UserBundle\EventListener\LastLoginListener</argument>
-      </call>
-      <call method="addSubscriberService">
-        <argument>fos_user.listener.authentication</argument>
-        <argument>FOS\UserBundle\EventListener\AuthenticationListener</argument>
-      </call>
-      <call method="addSubscriberService">
-        <argument>fos_user.listener.flash</argument>
-        <argument>FOS\UserBundle\EventListener\FlashListener</argument>
-      </call>
-      <call method="addSubscriberService">
-        <argument>fos_user.listener.resetting</argument>
-        <argument>FOS\UserBundle\EventListener\ResettingListener</argument>
-      </call>
-      <call method="addSubscriberService">
         <argument>swiftmailer.email_sender.listener</argument>
         <argument>Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener</argument>
       </call>
@@ -2141,6 +2309,46 @@
       <call method="addSubscriberService">
         <argument>sensio_framework_extra.security.listener</argument>
         <argument>Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_user.security.interactive_login_listener</argument>
+        <argument>FOS\UserBundle\EventListener\LastLoginListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_user.listener.authentication</argument>
+        <argument>FOS\UserBundle\EventListener\AuthenticationListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_user.listener.flash</argument>
+        <argument>FOS\UserBundle\EventListener\FlashListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_user.listener.resetting</argument>
+        <argument>FOS\UserBundle\EventListener\ResettingListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.comment_vote_score</argument>
+        <argument>FOS\CommentBundle\EventListener\CommentVoteScoreListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.thread_counters</argument>
+        <argument>FOS\CommentBundle\EventListener\ThreadCountersListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.thread_permalink</argument>
+        <argument>FOS\CommentBundle\EventListener\ThreadPermalinkListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.comment_blamer</argument>
+        <argument>FOS\CommentBundle\EventListener\CommentBlamerListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.vote_blamer</argument>
+        <argument>FOS\CommentBundle\EventListener\VoteBlamerListener</argument>
+      </call>
+      <call method="addSubscriberService">
+        <argument>fos_comment.listener.closed_threads</argument>
+        <argument>FOS\CommentBundle\EventListener\ClosedThreadListener</argument>
       </call>
       <call method="addSubscriberService">
         <argument>debug.dump_listener</argument>
@@ -2187,7 +2395,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>571debc1d074f6.08113927</argument>
+            <argument>573e0c7edafb84.27220606</argument>
           </service>
         </argument>
       </argument>
@@ -2339,7 +2547,7 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/</argument>
+                      <argument>^/admin/</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -2476,7 +2684,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>571debc1d074f6.08113927</argument>
+            <argument>573e0c7edafb84.27220606</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2524,7 +2732,7 @@
                 <call method="add">
                   <argument type="service">
                     <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                      <argument>^/</argument>
+                      <argument>^/admin/</argument>
                     </service>
                   </argument>
                   <argument type="collection">
@@ -2579,7 +2787,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">filename</argument>
-        <argument key="cache">C:\wamp\www\desguize\app\cache\dev/twig</argument>
+        <argument key="cache">C:\wamp\www\Desguize\app\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2654,7 +2862,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>C:\wamp\www\desguize\app</argument>
+            <argument>C:\wamp\www\Desguize\app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -2742,6 +2950,24 @@
       </call>
       <call method="addExtension">
         <argument type="service">
+          <service class="FOS\CommentBundle\Twig\CommentExtension" public="false">
+            <tag name="twig.extension"/>
+            <argument>null</argument>
+            <argument>null</argument>
+            <argument>null</argument>
+          </service>
+        </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service">
+          <service class="JMS\Serializer\Twig\SerializerExtension" public="false">
+            <tag name="twig.extension"/>
+            <argument type="service" id="jms_serializer"/>
+          </service>
+        </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service">
           <service class="Symfony\Bridge\Twig\Extension\DumpExtension" public="false">
             <tag name="twig.extension"/>
             <argument type="service" id="var_dumper.cloner"/>
@@ -2808,7 +3034,7 @@
       <argument>twig.controller.exception:showAction</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>C:\wamp\www\desguize\app\logs/dev.log</argument>
+      <argument>C:\wamp\www\Desguize\app\logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -2818,97 +3044,6 @@
       <argument>null</argument>
       <argument>true</argument>
       <argument type="collection"/>
-    </service>
-    <service id="fos_user.security.interactive_login_listener" class="FOS\UserBundle\EventListener\LastLoginListener">
-      <tag name="kernel.event_subscriber"/>
-      <argument type="service" id="fos_user.user_manager"/>
-    </service>
-    <service id="fos_user.security.login_manager" class="FOS\UserBundle\Security\LoginManager">
-      <argument type="service" id="security.token_storage"/>
-      <argument type="service" id="security.user_checker.main"/>
-      <argument type="service" id="security.authentication.session_strategy"/>
-      <argument type="service" id="service_container"/>
-    </service>
-    <service id="fos_user.user_provider.username" class="FOS\UserBundle\Security\UserProvider" public="false">
-      <argument type="service" id="fos_user.user_manager"/>
-    </service>
-    <service id="fos_user.util.user_manipulator" class="FOS\UserBundle\Util\UserManipulator">
-      <argument type="service" id="fos_user.user_manager"/>
-    </service>
-    <service id="fos_user.listener.authentication" class="FOS\UserBundle\EventListener\AuthenticationListener">
-      <tag name="kernel.event_subscriber"/>
-      <argument type="service" id="fos_user.security.login_manager"/>
-      <argument>main</argument>
-    </service>
-    <service id="fos_user.listener.flash" class="FOS\UserBundle\EventListener\FlashListener">
-      <tag name="kernel.event_subscriber"/>
-      <argument type="service" id="session"/>
-      <argument type="service" id="translator"/>
-    </service>
-    <service id="fos_user.username_form_type" class="FOS\UserBundle\Form\Type\UsernameFormType">
-      <tag name="form.type" alias="fos_user_username"/>
-      <argument type="service">
-        <service class="FOS\UserBundle\Form\DataTransformer\UserToUsernameTransformer" public="false">
-          <argument type="service" id="fos_user.user_manager"/>
-        </service>
-      </argument>
-    </service>
-    <service id="fos_user.profile.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
-      <argument type="service" id="form.factory"/>
-      <argument>fos_user_profile_form</argument>
-      <argument>FOS\UserBundle\Form\Type\ProfileFormType</argument>
-      <argument type="collection">
-        <argument>Profile</argument>
-        <argument>Default</argument>
-      </argument>
-    </service>
-    <service id="fos_user.profile.form.type" class="FOS\UserBundle\Form\Type\ProfileFormType">
-      <tag name="form.type" alias="fos_user_profile"/>
-      <argument>DesguizeBundle\Entity\User</argument>
-    </service>
-    <service id="fos_user.registration.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
-      <argument type="service" id="form.factory"/>
-      <argument>fos_user_registration_form</argument>
-      <argument>FOS\UserBundle\Form\Type\RegistrationFormType</argument>
-      <argument type="collection">
-        <argument>Registration</argument>
-        <argument>Default</argument>
-      </argument>
-    </service>
-    <service id="fos_user.registration.form.type" class="FOS\UserBundle\Form\Type\RegistrationFormType">
-      <tag name="form.type" alias="fos_user_registration"/>
-      <argument>DesguizeBundle\Entity\User</argument>
-    </service>
-    <service id="fos_user.change_password.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
-      <argument type="service" id="form.factory"/>
-      <argument>fos_user_change_password_form</argument>
-      <argument>FOS\UserBundle\Form\Type\ChangePasswordFormType</argument>
-      <argument type="collection">
-        <argument>ChangePassword</argument>
-        <argument>Default</argument>
-      </argument>
-    </service>
-    <service id="fos_user.change_password.form.type" class="FOS\UserBundle\Form\Type\ChangePasswordFormType">
-      <tag name="form.type" alias="fos_user_change_password"/>
-      <argument>DesguizeBundle\Entity\User</argument>
-    </service>
-    <service id="fos_user.resetting.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
-      <argument type="service" id="form.factory"/>
-      <argument>fos_user_resetting_form</argument>
-      <argument>FOS\UserBundle\Form\Type\ResettingFormType</argument>
-      <argument type="collection">
-        <argument>ResetPassword</argument>
-        <argument>Default</argument>
-      </argument>
-    </service>
-    <service id="fos_user.resetting.form.type" class="FOS\UserBundle\Form\Type\ResettingFormType">
-      <tag name="form.type" alias="fos_user_resetting"/>
-      <argument>DesguizeBundle\Entity\User</argument>
-    </service>
-    <service id="fos_user.listener.resetting" class="FOS\UserBundle\EventListener\ResettingListener">
-      <tag name="kernel.event_subscriber"/>
-      <argument type="service" id="router"/>
-      <argument>86400</argument>
     </service>
     <service id="swiftmailer.email_sender.listener" class="Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener">
       <tag name="kernel.event_subscriber"/>
@@ -3005,17 +3140,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_c1222fdd48ed0ccc28b8eb3fc078a2f52c347fdeb17be28c4236901c3f3a14f1</argument>
+        <argument>sf2orm_default_31873733d5440b4a7cc45ada491e6484f0398c4d6cc5a5de76e0872180221272</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_c1222fdd48ed0ccc28b8eb3fc078a2f52c347fdeb17be28c4236901c3f3a14f1</argument>
+        <argument>sf2orm_default_31873733d5440b4a7cc45ada491e6484f0398c4d6cc5a5de76e0872180221272</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_c1222fdd48ed0ccc28b8eb3fc078a2f52c347fdeb17be28c4236901c3f3a14f1</argument>
+        <argument>sf2orm_default_31873733d5440b4a7cc45ada491e6484f0398c4d6cc5a5de76e0872180221272</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -3030,6 +3165,7 @@
           <call method="setEntityNamespaces">
             <argument type="collection">
               <argument key="DesguizeBundle">DesguizeBundle\Entity</argument>
+              <argument key="FOSCommentBundle">FOS\CommentBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -3046,16 +3182,27 @@
               <service class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
                 <call method="addDriver">
                   <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver" public="false">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument key="C:\wamp\www\desguize\src\DesguizeBundle\Resources\config\doctrine">DesguizeBundle\Entity</argument>
+                        <argument>C:\wamp\www\Desguize\src\DesguizeBundle\Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>DesguizeBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle\Resources\config\doctrine">FOS\CommentBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
                       </call>
                     </service>
                   </argument>
-                  <argument>DesguizeBundle\Entity</argument>
+                  <argument>FOS\CommentBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
@@ -3063,7 +3210,7 @@
                       <argument type="service">
                         <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                           <argument type="collection">
-                            <argument key="C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
+                            <argument key="C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
                           </argument>
                           <argument>.orm.xml</argument>
                         </service>
@@ -3076,7 +3223,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>C:\wamp\www\desguize\app\cache\dev/doctrine/orm/Proxies</argument>
+            <argument>C:\wamp\www\Desguize\app\cache\dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -3156,6 +3303,643 @@
       <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
       <argument type="service" id="security.token_storage" on-invalid="null"/>
       <argument type="service" id="security.authorization_checker" on-invalid="null"/>
+    </service>
+    <service id="fos_user.security.interactive_login_listener" class="FOS\UserBundle\EventListener\LastLoginListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="fos_user.user_manager"/>
+    </service>
+    <service id="fos_user.security.login_manager" class="FOS\UserBundle\Security\LoginManager">
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="security.user_checker.main"/>
+      <argument type="service" id="security.authentication.session_strategy"/>
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="fos_user.user_provider.username" class="FOS\UserBundle\Security\UserProvider" public="false">
+      <argument type="service" id="fos_user.user_manager"/>
+    </service>
+    <service id="fos_user.util.user_manipulator" class="FOS\UserBundle\Util\UserManipulator">
+      <argument type="service" id="fos_user.user_manager"/>
+    </service>
+    <service id="fos_user.listener.authentication" class="FOS\UserBundle\EventListener\AuthenticationListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="fos_user.security.login_manager"/>
+      <argument>main</argument>
+    </service>
+    <service id="fos_user.listener.flash" class="FOS\UserBundle\EventListener\FlashListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="session"/>
+      <argument type="service" id="translator"/>
+    </service>
+    <service id="fos_user.username_form_type" class="FOS\UserBundle\Form\Type\UsernameFormType">
+      <tag name="form.type" alias="fos_user_username"/>
+      <argument type="service">
+        <service class="FOS\UserBundle\Form\DataTransformer\UserToUsernameTransformer" public="false">
+          <argument type="service" id="fos_user.user_manager"/>
+        </service>
+      </argument>
+    </service>
+    <service id="fos_user.profile.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_user_profile_form</argument>
+      <argument>DesguizeBundle\Form\ProfileFormType</argument>
+      <argument type="collection">
+        <argument>Profile</argument>
+        <argument>Default</argument>
+      </argument>
+    </service>
+    <service id="fos_user.profile.form.type" class="FOS\UserBundle\Form\Type\ProfileFormType">
+      <tag name="form.type" alias="fos_user_profile"/>
+      <argument>DesguizeBundle\Entity\User</argument>
+    </service>
+    <service id="fos_user.registration.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_user_registration_form</argument>
+      <argument>DesguizeBundle\Form\RegistrationType</argument>
+      <argument type="collection">
+        <argument>Registration</argument>
+        <argument>Default</argument>
+      </argument>
+    </service>
+    <service id="fos_user.registration.form.type" class="FOS\UserBundle\Form\Type\RegistrationFormType">
+      <tag name="form.type" alias="fos_user_registration"/>
+      <argument>DesguizeBundle\Entity\User</argument>
+    </service>
+    <service id="fos_user.change_password.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_user_change_password_form</argument>
+      <argument>FOS\UserBundle\Form\Type\ChangePasswordFormType</argument>
+      <argument type="collection">
+        <argument>ChangePassword</argument>
+        <argument>Default</argument>
+      </argument>
+    </service>
+    <service id="fos_user.change_password.form.type" class="FOS\UserBundle\Form\Type\ChangePasswordFormType">
+      <tag name="form.type" alias="fos_user_change_password"/>
+      <argument>DesguizeBundle\Entity\User</argument>
+    </service>
+    <service id="fos_user.resetting.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_user_resetting_form</argument>
+      <argument>FOS\UserBundle\Form\Type\ResettingFormType</argument>
+      <argument type="collection">
+        <argument>ResetPassword</argument>
+        <argument>Default</argument>
+      </argument>
+    </service>
+    <service id="fos_user.resetting.form.type" class="FOS\UserBundle\Form\Type\ResettingFormType">
+      <tag name="form.type" alias="fos_user_resetting"/>
+      <argument>DesguizeBundle\Entity\User</argument>
+    </service>
+    <service id="fos_user.listener.resetting" class="FOS\UserBundle\EventListener\ResettingListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="router"/>
+      <argument>86400</argument>
+    </service>
+    <service id="fos_rest.view.exception_wrapper_handler" class="FOS\RestBundle\View\ExceptionWrapperHandler"/>
+    <service id="fos_rest.serializer.exception_wrapper_serialize_handler" class="FOS\RestBundle\Serializer\ExceptionWrapperSerializeHandler">
+      <tag name="jms_serializer.subscribing_handler"/>
+    </service>
+    <service id="fos_rest.serializer.exception_wrapper_normalizer" class="FOS\RestBundle\Serializer\ExceptionWrapperNormalizer">
+      <tag name="serializer.normalizer"/>
+      <argument type="service" id="translator"/>
+    </service>
+    <service id="fos_rest.routing.loader.controller" class="FOS\RestBundle\Routing\Loader\RestRouteLoader">
+      <tag name="routing.loader"/>
+      <argument type="service" id="service_container"/>
+      <argument type="service" id="file_locator"/>
+      <argument type="service" id="controller_name_converter"/>
+      <argument type="service" id="fos_rest.routing.loader.reader.controller"/>
+      <argument>null</argument>
+    </service>
+    <service id="fos_rest.routing.loader.processor" class="FOS\RestBundle\Routing\Loader\RestRouteProcessor"/>
+    <service id="fos_rest.routing.loader.yaml_collection" class="FOS\RestBundle\Routing\Loader\RestYamlCollectionLoader">
+      <tag name="routing.loader"/>
+      <argument type="service" id="file_locator"/>
+      <argument type="service" id="fos_rest.routing.loader.processor"/>
+      <argument>true</argument>
+      <argument type="collection">
+        <argument key="json">false</argument>
+        <argument key="xml">false</argument>
+        <argument key="html">true</argument>
+      </argument>
+      <argument>null</argument>
+    </service>
+    <service id="fos_rest.routing.loader.xml_collection" class="FOS\RestBundle\Routing\Loader\RestXmlCollectionLoader">
+      <tag name="routing.loader"/>
+      <argument type="service" id="file_locator"/>
+      <argument type="service" id="fos_rest.routing.loader.processor"/>
+      <argument>true</argument>
+      <argument type="collection">
+        <argument key="json">false</argument>
+        <argument key="xml">false</argument>
+        <argument key="html">true</argument>
+      </argument>
+      <argument>null</argument>
+    </service>
+    <service id="fos_rest.routing.loader.reader.controller" class="FOS\RestBundle\Routing\Loader\Reader\RestControllerReader">
+      <argument type="service" id="fos_rest.routing.loader.reader.action"/>
+      <argument type="service" id="annotation_reader"/>
+    </service>
+    <service id="fos_rest.routing.loader.reader.action" class="FOS\RestBundle\Routing\Loader\Reader\RestActionReader">
+      <argument type="service" id="annotation_reader"/>
+      <argument type="service" id="fos_rest.request.param_fetcher.reader"/>
+      <argument type="service" id="fos_rest.inflector.doctrine"/>
+      <argument>true</argument>
+      <argument type="collection">
+        <argument key="json">false</argument>
+        <argument key="xml">false</argument>
+        <argument key="html">true</argument>
+      </argument>
+    </service>
+    <service id="fos_rest.format_negotiator" class="FOS\RestBundle\Util\FormatNegotiator"/>
+    <service id="fos_rest.exception_format_negotiator" class="FOS\RestBundle\Util\FormatNegotiator"/>
+    <service id="fos_rest.inflector.doctrine" class="FOS\RestBundle\Util\Inflector\DoctrineInflector"/>
+    <service id="fos_rest.violation_formatter" class="FOS\RestBundle\Util\ViolationFormatter"/>
+    <service id="fos_rest.request.param_fetcher" class="FOS\RestBundle\Request\ParamFetcher">
+      <argument type="service" id="fos_rest.request.param_fetcher.reader"/>
+      <argument type="service" id="request_stack" on-invalid="null"/>
+      <argument type="service" id="fos_rest.violation_formatter"/>
+      <argument type="service" id="validator" on-invalid="null"/>
+    </service>
+    <service id="fos_rest.request.param_fetcher.reader" class="FOS\RestBundle\Request\ParamReader">
+      <argument type="service" id="annotation_reader"/>
+    </service>
+    <service id="fos_rest.normalizer.camel_keys" class="FOS\RestBundle\Normalizer\CamelKeysNormalizer"/>
+    <service id="fos_rest.normalizer.camel_keys_with_leading_underscore" class="FOS\RestBundle\Normalizer\CamelKeysNormalizerWithLeadingUnderscore"/>
+    <service id="fos_rest.decoder.json" class="FOS\RestBundle\Decoder\JsonDecoder"/>
+    <service id="fos_rest.decoder.jsontoform" class="FOS\RestBundle\Decoder\JsonToFormDecoder"/>
+    <service id="fos_rest.decoder.xml" class="FOS\RestBundle\Decoder\XmlDecoder"/>
+    <service id="fos_rest.decoder_provider" class="FOS\RestBundle\Decoder\ContainerDecoderProvider">
+      <argument type="collection">
+        <argument key="json">fos_rest.decoder.json</argument>
+        <argument key="xml">fos_rest.decoder.xml</argument>
+      </argument>
+      <call method="setContainer">
+        <argument type="service" id="service_container"/>
+      </call>
+    </service>
+    <service id="fos_rest.body_listener" class="FOS\RestBundle\EventListener\BodyListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="10"/>
+      <argument type="service" id="fos_rest.decoder_provider"/>
+      <argument>false</argument>
+      <call method="setDefaultFormat">
+        <argument>null</argument>
+      </call>
+    </service>
+    <service id="fos_comment.manager.thread.default" class="FOS\CommentBundle\Entity\ThreadManager">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="fos_comment.entity_manager"/>
+      <argument>FOS\CommentBundle\Document\Thread</argument>
+    </service>
+    <service id="fos_comment.manager.comment.default" class="FOS\CommentBundle\Entity\CommentManager">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="fos_comment.sorting_factory"/>
+      <argument type="service" id="fos_comment.entity_manager"/>
+      <argument>FOS\CommentBundle\Document\Comment</argument>
+    </service>
+    <service id="fos_comment.manager.vote.default" class="FOS\CommentBundle\Entity\VoteManager">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="fos_comment.entity_manager"/>
+      <argument>FOS\CommentBundle\Entity\Vote</argument>
+    </service>
+    <service id="fos_comment.entity_manager" class="Doctrine\ORM\EntityManager" public="false">
+      <argument>null</argument>
+      <factory service="doctrine" method="getManager"/>
+    </service>
+    <service id="fos_comment.listener.comment_vote_score" class="FOS\CommentBundle\EventListener\CommentVoteScoreListener">
+      <tag name="kernel.event_subscriber"/>
+    </service>
+    <service id="fos_comment.listener.thread_counters" class="FOS\CommentBundle\EventListener\ThreadCountersListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="fos_comment.manager.comment.default"/>
+    </service>
+    <service id="fos_comment.listener.thread_permalink" class="FOS\CommentBundle\EventListener\ThreadPermalinkListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="fos_comment.listener.comment_blamer" class="FOS\CommentBundle\EventListener\CommentBlamerListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="security.authorization_checker"/>
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="logger" on-invalid="null"/>
+    </service>
+    <service id="fos_comment.listener.vote_blamer" class="FOS\CommentBundle\EventListener\VoteBlamerListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="security.authorization_checker"/>
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="logger" on-invalid="null"/>
+    </service>
+    <service id="fos_comment.listener.closed_threads" class="FOS\CommentBundle\EventListener\ClosedThreadListener">
+      <tag name="kernel.event_subscriber"/>
+    </service>
+    <service id="fos_comment.form_type.comment.default" class="FOS\CommentBundle\Form\CommentType">
+      <tag name="form.type" alias="fos_comment_comment"/>
+      <argument>FOS\CommentBundle\Document\Comment</argument>
+    </service>
+    <service id="fos_comment.form_type.commentable_thread.default" class="FOS\CommentBundle\Form\CommentableThreadType">
+      <tag name="form.type" alias="fos_comment_commentable_thread"/>
+      <argument>FOS\CommentBundle\Document\Thread</argument>
+    </service>
+    <service id="fos_comment.form_type.delete_comment.default" class="FOS\CommentBundle\Form\DeleteCommentType">
+      <tag name="form.type" alias="fos_comment_delete_comment"/>
+      <argument>FOS\CommentBundle\Document\Comment</argument>
+    </service>
+    <service id="fos_comment.form_type.thread.default" class="FOS\CommentBundle\Form\ThreadType">
+      <tag name="form.type" alias="fos_comment_thread"/>
+      <argument>FOS\CommentBundle\Document\Thread</argument>
+    </service>
+    <service id="fos_comment.form_type.vote.default" class="FOS\CommentBundle\Form\VoteType">
+      <tag name="form.type" alias="fos_comment_vote"/>
+      <argument>FOS\CommentBundle\Entity\Vote</argument>
+    </service>
+    <service id="fos_comment.sorting_factory" class="FOS\CommentBundle\Sorting\SortingFactory">
+      <argument type="collection">
+        <argument key="date_asc" type="service">
+          <service class="FOS\CommentBundle\Sorting\DateSorting" public="false">
+            <tag name="fos_comment.sorter" alias="date_asc"/>
+            <argument>ASC</argument>
+          </service>
+        </argument>
+        <argument key="date_desc" type="service">
+          <service class="FOS\CommentBundle\Sorting\DateSorting" public="false">
+            <tag name="fos_comment.sorter" alias="date_desc"/>
+            <argument>DESC</argument>
+          </service>
+        </argument>
+      </argument>
+      <argument>date_desc</argument>
+    </service>
+    <service id="jms_serializer.doctrine_proxy_subscriber" class="JMS\Serializer\EventDispatcher\Subscriber\DoctrineProxySubscriber">
+      <tag name="jms_serializer.event_subscriber"/>
+    </service>
+    <service id="jms_serializer.stopwatch_subscriber" class="JMS\SerializerBundle\Serializer\StopwatchEventSubscriber">
+      <tag name="jms_serializer.event_subscriber"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="jms_serializer.handler_registry" class="JMS\Serializer\Handler\LazyHandlerRegistry">
+      <argument type="service" id="service_container"/>
+      <argument type="collection">
+        <argument key="1" type="collection">
+          <argument key="FOS\RestBundle\Util\ExceptionWrapper" type="collection">
+            <argument key="json" type="collection">
+              <argument>fos_rest.serializer.exception_wrapper_serialize_handler</argument>
+              <argument>serializeToJson</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>fos_rest.serializer.exception_wrapper_serialize_handler</argument>
+              <argument>serializeToXml</argument>
+            </argument>
+          </argument>
+          <argument key="DateTime" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>serializeDateTime</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>serializeDateTime</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>serializeDateTime</argument>
+            </argument>
+          </argument>
+          <argument key="DateInterval" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>serializeDateInterval</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>serializeDateInterval</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>serializeDateInterval</argument>
+            </argument>
+          </argument>
+          <argument key="ArrayCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\Common\Collections\ArrayCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\ORM\PersistentCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\ODM\MongoDB\PersistentCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\ODM\PHPCR\PersistentCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>serializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="PhpCollection\Sequence" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>serializeSequence</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>serializeSequence</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>serializeSequence</argument>
+            </argument>
+          </argument>
+          <argument key="PhpCollection\Map" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>serializeMap</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>serializeMap</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>serializeMap</argument>
+            </argument>
+          </argument>
+          <argument key="Symfony\Component\Form\Form" type="collection">
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.form_error_handler</argument>
+              <argument>serializeFormToxml</argument>
+            </argument>
+            <argument key="json" type="collection">
+              <argument>jms_serializer.form_error_handler</argument>
+              <argument>serializeFormTojson</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.form_error_handler</argument>
+              <argument>serializeFormToyml</argument>
+            </argument>
+          </argument>
+          <argument key="Symfony\Component\Form\FormError" type="collection">
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.form_error_handler</argument>
+              <argument>serializeFormErrorToxml</argument>
+            </argument>
+            <argument key="json" type="collection">
+              <argument>jms_serializer.form_error_handler</argument>
+              <argument>serializeFormErrorTojson</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.form_error_handler</argument>
+              <argument>serializeFormErrorToyml</argument>
+            </argument>
+          </argument>
+          <argument key="Symfony\Component\Validator\ConstraintViolationList" type="collection">
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.constraint_violation_handler</argument>
+              <argument>serializeListToxml</argument>
+            </argument>
+            <argument key="json" type="collection">
+              <argument>jms_serializer.constraint_violation_handler</argument>
+              <argument>serializeListTojson</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.constraint_violation_handler</argument>
+              <argument>serializeListToyml</argument>
+            </argument>
+          </argument>
+          <argument key="Symfony\Component\Validator\ConstraintViolation" type="collection">
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.constraint_violation_handler</argument>
+              <argument>serializeViolationToxml</argument>
+            </argument>
+            <argument key="json" type="collection">
+              <argument>jms_serializer.constraint_violation_handler</argument>
+              <argument>serializeViolationTojson</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.constraint_violation_handler</argument>
+              <argument>serializeViolationToyml</argument>
+            </argument>
+          </argument>
+        </argument>
+        <argument key="2" type="collection">
+          <argument key="DateTime" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>deserializeDateTimeFromjson</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>deserializeDateTimeFromxml</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.datetime_handler</argument>
+              <argument>deserializeDateTimeFromyml</argument>
+            </argument>
+          </argument>
+          <argument key="ArrayCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\Common\Collections\ArrayCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\ORM\PersistentCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\ODM\MongoDB\PersistentCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="Doctrine\ODM\PHPCR\PersistentCollection" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.array_collection_handler</argument>
+              <argument>deserializeCollection</argument>
+            </argument>
+          </argument>
+          <argument key="PhpCollection\Sequence" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>deserializeSequence</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>deserializeSequence</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>deserializeSequence</argument>
+            </argument>
+          </argument>
+          <argument key="PhpCollection\Map" type="collection">
+            <argument key="json" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>deserializeMap</argument>
+            </argument>
+            <argument key="xml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>deserializeMap</argument>
+            </argument>
+            <argument key="yml" type="collection">
+              <argument>jms_serializer.php_collection_handler</argument>
+              <argument>deserializeMap</argument>
+            </argument>
+          </argument>
+        </argument>
+      </argument>
+    </service>
+    <service id="jms_serializer.datetime_handler" class="JMS\Serializer\Handler\DateHandler">
+      <tag name="jms_serializer.subscribing_handler"/>
+      <argument>Y-m-d\TH:i:sO</argument>
+      <argument>Europe/Paris</argument>
+      <argument>true</argument>
+    </service>
+    <service id="jms_serializer.array_collection_handler" class="JMS\Serializer\Handler\ArrayCollectionHandler">
+      <tag name="jms_serializer.subscribing_handler"/>
+    </service>
+    <service id="jms_serializer.php_collection_handler" class="JMS\Serializer\Handler\PhpCollectionHandler">
+      <tag name="jms_serializer.subscribing_handler"/>
+    </service>
+    <service id="jms_serializer.form_error_handler" class="JMS\Serializer\Handler\FormErrorHandler">
+      <tag name="jms_serializer.subscribing_handler"/>
+      <argument type="service" id="translator"/>
+    </service>
+    <service id="jms_serializer.constraint_violation_handler" class="JMS\Serializer\Handler\ConstraintViolationHandler">
+      <tag name="jms_serializer.subscribing_handler"/>
+    </service>
+    <service id="jms_serializer.unserialize_object_constructor" class="JMS\Serializer\Construction\UnserializeObjectConstructor" public="false"/>
+    <service id="jms_serializer.templating.helper.serializer" class="JMS\SerializerBundle\Templating\SerializerHelper">
+      <tag name="templating.helper" alias="jms_serializer"/>
+      <argument type="service" id="jms_serializer"/>
+    </service>
+    <service id="jms_serializer.json_serialization_visitor" class="JMS\Serializer\JsonSerializationVisitor">
+      <tag name="jms_serializer.serialization_visitor" format="json"/>
+      <argument type="service" id="jms_serializer.naming_strategy"/>
+      <call method="setOptions">
+        <argument>0</argument>
+      </call>
+    </service>
+    <service id="jms_serializer.json_deserialization_visitor" class="JMS\Serializer\JsonDeserializationVisitor">
+      <tag name="jms_serializer.deserialization_visitor" format="json"/>
+      <argument type="service" id="jms_serializer.naming_strategy"/>
+      <argument type="service" id="jms_serializer.unserialize_object_constructor"/>
+    </service>
+    <service id="jms_serializer.xml_serialization_visitor" class="JMS\Serializer\XmlSerializationVisitor">
+      <tag name="jms_serializer.serialization_visitor" format="xml"/>
+      <argument type="service" id="jms_serializer.naming_strategy"/>
+    </service>
+    <service id="jms_serializer.xml_deserialization_visitor" class="JMS\Serializer\XmlDeserializationVisitor">
+      <tag name="jms_serializer.deserialization_visitor" format="xml"/>
+      <argument type="service" id="jms_serializer.naming_strategy"/>
+      <argument type="service" id="jms_serializer.unserialize_object_constructor"/>
+      <call method="setDoctypeWhitelist">
+        <argument type="collection"/>
+      </call>
+    </service>
+    <service id="jms_serializer.yaml_serialization_visitor" class="JMS\Serializer\YamlSerializationVisitor">
+      <tag name="jms_serializer.serialization_visitor" format="yml"/>
+      <argument type="service" id="jms_serializer.naming_strategy"/>
     </service>
     <service id="data_collector.dump" class="Symfony\Component\HttpKernel\DataCollector\DumpDataCollector">
       <tag name="data_collector" id="dump" template="@Debug/Profiler/dump.html.twig" priority="240"/>
@@ -3382,7 +4166,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>C:\wamp\www\desguize\app\cache\dev/sessions</argument>
+      <argument>C:\wamp\www\Desguize\app\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
@@ -3406,9 +4190,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>C:\wamp\www\desguize\app/config/routing_dev.yml</argument>
+      <argument>C:\wamp\www\Desguize\app/config/routing_dev.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\desguize\app\cache\dev</argument>
+        <argument key="cache_dir">C:\wamp\www\Desguize\app\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -3432,7 +4216,7 @@
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>C:\wamp\www\desguize\app\cache\dev/annotations</argument>
+          <argument>C:\wamp\www\Desguize\app\cache\dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
@@ -3456,50 +4240,57 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
-        <argument>FOSUser</argument>
-      </call>
-      <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\src\DesguizeBundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\src\DesguizeBundle/Resources/views</argument>
         <argument>Desguize</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
+        <argument>FOSUser</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/views</argument>
+        <argument>FOSComment</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\app/Resources/views</argument>
+        <argument>C:\wamp\www\Desguize\app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\desguize\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
+        <argument>C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
       <argument>app</argument>
+      <call method="useMicrosecondTimestamps">
+        <argument>true</argument>
+      </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
       </call>
@@ -3510,39 +4301,6 @@
         <argument type="service" id="monolog.handler.debug"/>
       </call>
       <autowiring-type>Psr\Log\LoggerInterface</autowiring-type>
-    </service>
-    <service id="fos_user.mailer" class="FOS\UserBundle\Mailer\Mailer">
-      <argument type="service" id="swiftmailer.mailer.default"/>
-      <argument type="service" id="router"/>
-      <argument type="service" id="templating"/>
-      <argument type="collection">
-        <argument key="confirmation.template">FOSUserBundle:Registration:email.txt.twig</argument>
-        <argument key="resetting.template">FOSUserBundle:Resetting:email.txt.twig</argument>
-        <argument key="from_email" type="collection">
-          <argument key="confirmation" type="collection">
-            <argument key="webmaster@example.com">webmaster</argument>
-          </argument>
-          <argument key="resetting" type="collection">
-            <argument key="webmaster@example.com">webmaster</argument>
-          </argument>
-        </argument>
-      </argument>
-    </service>
-    <service id="fos_user.util.email_canonicalizer" class="FOS\UserBundle\Util\Canonicalizer"/>
-    <service id="fos_user.util.token_generator" class="FOS\UserBundle\Util\TokenGenerator">
-      <argument type="service" id="logger" on-invalid="ignore"/>
-    </service>
-    <service id="fos_user.user_manager" class="FOS\UserBundle\Doctrine\UserManager">
-      <argument type="service" id="security.encoder_factory"/>
-      <argument type="service" id="fos_user.util.email_canonicalizer"/>
-      <argument type="service" id="fos_user.util.email_canonicalizer"/>
-      <argument type="service">
-        <service class="Doctrine\Common\Persistence\ObjectManager" public="false">
-          <argument>null</argument>
-          <factory service="doctrine" method="getManager"/>
-        </service>
-      </argument>
-      <argument>DesguizeBundle\Entity\User</argument>
     </service>
     <service id="swiftmailer.mailer.default.transport" class="Swift_Transport_SpoolTransport">
       <argument type="service" id="swiftmailer.mailer.default.transport.eventdispatcher"/>
@@ -3603,9 +4361,277 @@
         <argument>null</argument>
       </call>
     </service>
+    <service id="fos_user.mailer" class="FOS\UserBundle\Mailer\Mailer">
+      <argument type="service" id="swiftmailer.mailer.default"/>
+      <argument type="service" id="router"/>
+      <argument type="service" id="templating"/>
+      <argument type="collection">
+        <argument key="confirmation.template">FOSUserBundle:Registration:email.txt.twig</argument>
+        <argument key="resetting.template">FOSUserBundle:Resetting:email.txt.twig</argument>
+        <argument key="from_email" type="collection">
+          <argument key="confirmation" type="collection">
+            <argument key="webmaster@example.com">webmaster</argument>
+          </argument>
+          <argument key="resetting" type="collection">
+            <argument key="webmaster@example.com">webmaster</argument>
+          </argument>
+        </argument>
+      </argument>
+    </service>
+    <service id="fos_user.util.email_canonicalizer" class="FOS\UserBundle\Util\Canonicalizer"/>
+    <service id="fos_user.util.token_generator" class="FOS\UserBundle\Util\TokenGenerator">
+      <argument type="service" id="logger" on-invalid="ignore"/>
+    </service>
+    <service id="fos_user.user_manager" class="FOS\UserBundle\Doctrine\UserManager">
+      <argument type="service" id="security.encoder_factory"/>
+      <argument type="service" id="fos_user.util.email_canonicalizer"/>
+      <argument type="service" id="fos_user.util.email_canonicalizer"/>
+      <argument type="service">
+        <service class="Doctrine\Common\Persistence\ObjectManager" public="false">
+          <argument>null</argument>
+          <factory service="doctrine" method="getManager"/>
+        </service>
+      </argument>
+      <argument>DesguizeBundle\Entity\User</argument>
+    </service>
+    <service id="fos_rest.view_handler" class="FOS\RestBundle\View\ViewHandler">
+      <argument type="collection">
+        <argument key="json">false</argument>
+        <argument key="xml">false</argument>
+        <argument key="html">true</argument>
+      </argument>
+      <argument>400</argument>
+      <argument>204</argument>
+      <argument>false</argument>
+      <argument type="collection">
+        <argument key="html">302</argument>
+      </argument>
+      <argument>twig</argument>
+      <call method="setExclusionStrategyGroups">
+        <argument></argument>
+      </call>
+      <call method="setExclusionStrategyVersion">
+        <argument></argument>
+      </call>
+      <call method="setSerializeNullStrategy">
+        <argument>false</argument>
+      </call>
+      <call method="setContainer">
+        <argument type="service" id="service_container"/>
+      </call>
+    </service>
+    <service id="fos_comment.form_factory.comment" class="FOS\CommentBundle\FormFactory\CommentFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_comment_comment</argument>
+      <argument>fos_comment_comment</argument>
+    </service>
+    <service id="fos_comment.form_factory.commentable_thread" class="FOS\CommentBundle\FormFactory\CommentableThreadFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_comment_commentable_thread</argument>
+      <argument>fos_comment_commentable_thread</argument>
+    </service>
+    <service id="fos_comment.form_factory.delete_comment" class="FOS\CommentBundle\FormFactory\DeleteCommentFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_comment_delete_comment</argument>
+      <argument>fos_comment_delete_comment</argument>
+    </service>
+    <service id="fos_comment.form_factory.thread" class="FOS\CommentBundle\FormFactory\ThreadFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_comment_thread</argument>
+      <argument>fos_comment_thread</argument>
+    </service>
+    <service id="fos_comment.form_factory.vote" class="FOS\CommentBundle\FormFactory\VoteFormFactory">
+      <argument type="service" id="form.factory"/>
+      <argument>fos_comment_vote</argument>
+      <argument>fos_comment_vote</argument>
+    </service>
+    <service id="jms_serializer.metadata_driver" class="JMS\Serializer\Metadata\Driver\DoctrineTypeDriver">
+      <argument type="service">
+        <service class="Metadata\Driver\DriverChain" public="false">
+          <argument type="collection">
+            <argument type="service">
+              <service class="JMS\Serializer\Metadata\Driver\YamlDriver" public="false">
+                <argument type="service">
+                  <service class="Metadata\Driver\FileLocator" public="false">
+                    <argument type="collection">
+                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\Desguize\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\Desguize\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\Desguize\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\Desguize\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="DesguizeBundle">C:\wamp\www\Desguize\src\DesguizeBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\CommentBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">C:\wamp\www\Desguize\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\Desguize\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\Desguize\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
+                    </argument>
+                  </service>
+                </argument>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="JMS\Serializer\Metadata\Driver\XmlDriver" public="false">
+                <argument type="service">
+                  <service class="Metadata\Driver\FileLocator" public="false">
+                    <argument type="collection">
+                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\Desguize\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\Desguize\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\Desguize\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\Desguize\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="DesguizeBundle">C:\wamp\www\Desguize\src\DesguizeBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\CommentBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">C:\wamp\www\Desguize\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\Desguize\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\Desguize\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
+                    </argument>
+                  </service>
+                </argument>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="JMS\Serializer\Metadata\Driver\PhpDriver" public="false">
+                <argument type="service">
+                  <service class="Metadata\Driver\FileLocator" public="false">
+                    <argument type="collection">
+                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\Desguize\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\Desguize\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\Desguize\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\Desguize\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="DesguizeBundle">C:\wamp\www\Desguize\src\DesguizeBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\CommentBundle">C:\wamp\www\Desguize\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">C:\wamp\www\Desguize\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\Desguize\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\Desguize\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\Desguize\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
+                    </argument>
+                  </service>
+                </argument>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="JMS\Serializer\Metadata\Driver\AnnotationDriver" public="false">
+                <argument type="service" id="annotation_reader"/>
+              </service>
+            </argument>
+          </argument>
+        </service>
+      </argument>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="jms_serializer.naming_strategy" class="JMS\Serializer\Naming\CacheNamingStrategy">
+      <argument type="service">
+        <service class="JMS\Serializer\Naming\SerializedNameAnnotationStrategy" public="false">
+          <argument type="service">
+            <service class="JMS\Serializer\Naming\CamelCaseNamingStrategy" public="false">
+              <argument>_</argument>
+              <argument>true</argument>
+            </service>
+          </argument>
+        </service>
+      </argument>
+    </service>
+    <service id="jms_serializer.object_constructor" class="JMS\Serializer\Construction\DoctrineObjectConstructor">
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="jms_serializer.unserialize_object_constructor"/>
+    </service>
+    <service id="jms_serializer" class="JMS\Serializer\Serializer">
+      <argument type="service">
+        <service class="Metadata\MetadataFactory" public="false">
+          <argument type="service">
+            <service class="Metadata\Driver\LazyLoadingDriver" public="false">
+              <argument type="service" id="service_container"/>
+              <argument>jms_serializer.metadata_driver</argument>
+            </service>
+          </argument>
+          <argument>Metadata\ClassHierarchyMetadata</argument>
+          <argument>true</argument>
+          <call method="setCache">
+            <argument type="service">
+              <service class="Metadata\Cache\FileCache" public="false">
+                <argument>C:\wamp\www\Desguize\app\cache\dev/jms_serializer</argument>
+              </service>
+            </argument>
+          </call>
+        </service>
+      </argument>
+      <argument type="service" id="jms_serializer.handler_registry"/>
+      <argument type="service" id="jms_serializer.unserialize_object_constructor"/>
+      <argument type="service">
+        <service class="PhpCollection\Map">
+          <argument type="collection">
+            <argument key="json" type="service" id="jms_serializer.json_serialization_visitor"/>
+            <argument key="xml" type="service" id="jms_serializer.xml_serialization_visitor"/>
+            <argument key="yml" type="service" id="jms_serializer.yaml_serialization_visitor"/>
+          </argument>
+        </service>
+      </argument>
+      <argument type="service">
+        <service class="PhpCollection\Map">
+          <argument type="collection">
+            <argument key="json" type="service" id="jms_serializer.json_deserialization_visitor"/>
+            <argument key="xml" type="service" id="jms_serializer.xml_deserialization_visitor"/>
+          </argument>
+        </service>
+      </argument>
+      <argument type="service">
+        <service class="JMS\Serializer\EventDispatcher\LazyEventDispatcher" public="false">
+          <argument type="service" id="service_container"/>
+          <call method="setListeners">
+            <argument type="collection">
+              <argument key="serializer.pre_serialize" type="collection">
+                <argument type="collection">
+                  <argument type="collection">
+                    <argument>jms_serializer.stopwatch_subscriber</argument>
+                    <argument>onPreSerialize</argument>
+                  </argument>
+                  <argument>null</argument>
+                  <argument>null</argument>
+                </argument>
+                <argument type="collection">
+                  <argument type="collection">
+                    <argument>jms_serializer.doctrine_proxy_subscriber</argument>
+                    <argument>onPreSerialize</argument>
+                  </argument>
+                  <argument>null</argument>
+                  <argument>null</argument>
+                </argument>
+              </argument>
+              <argument key="serializer.post_serialize" type="collection">
+                <argument type="collection">
+                  <argument type="collection">
+                    <argument>jms_serializer.stopwatch_subscriber</argument>
+                    <argument>onPostSerialize</argument>
+                  </argument>
+                  <argument>null</argument>
+                  <argument>null</argument>
+                </argument>
+              </argument>
+            </argument>
+          </call>
+        </service>
+      </argument>
+    </service>
     <service id="session.storage" alias="session.storage.native"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher"/>
-    <service id="fos_user.util.username_canonicalizer" alias="fos_user.util.email_canonicalizer"/>
     <service id="swiftmailer.spool" alias="swiftmailer.mailer.default.spool"/>
     <service id="swiftmailer.transport.real" alias="swiftmailer.mailer.default.transport.real"/>
     <service id="swiftmailer.plugin.messagelogger" alias="swiftmailer.mailer.default.plugin.messagelogger"/>
@@ -3617,6 +4643,16 @@
     <service id="doctrine.orm.default_metadata_cache" alias="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
     <service id="doctrine.orm.default_result_cache" alias="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
     <service id="doctrine.orm.default_query_cache" alias="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
+    <service id="fos_user.util.username_canonicalizer" alias="fos_user.util.email_canonicalizer"/>
+    <service id="fos_rest.router" alias="router"/>
+    <service id="fos_rest.templating" alias="templating"/>
+    <service id="fos_rest.exception_handler" alias="fos_rest.view.exception_wrapper_handler"/>
+    <service id="fos_rest.inflector" alias="fos_rest.inflector.doctrine"/>
+    <service id="fos_comment.manager.thread" alias="fos_comment.manager.thread.default"/>
+    <service id="fos_comment.manager.comment" alias="fos_comment.manager.comment.default"/>
+    <service id="fos_comment.manager.vote" alias="fos_comment.manager.vote.default"/>
+    <service id="serializer" alias="jms_serializer"/>
     <service id="console.command.sensiolabs_security_command_securitycheckercommand" alias="sensio_distribution.security_checker.command"/>
+    <service id="fos_rest.serializer" alias="jms_serializer"/>
   </services>
 </container>

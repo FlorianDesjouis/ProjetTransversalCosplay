@@ -5,6 +5,4 @@ Thumbs.db
 *.sublime-*
 .*.swp
 .swp
-*config/
-model/connectBDD.php
 /vendor

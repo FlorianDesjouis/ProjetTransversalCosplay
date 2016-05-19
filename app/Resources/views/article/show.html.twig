@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ article.name }}</h1>
+    <img src="{{ asset('bundles/desguize/images/uploads/'~article.path) }}">
+    <p>{{ article.description }}</p>
+    <p>
+        {% if article.dateCreation %}
+            Posté le {{ article.dateCreation|date('Y-m-d') }} à {{ article.dateCreation|date('H:m:s') }}
+        {% endif %}
+    </p>
+    <ul>
+        <li>
+            <a href="{{ path('article_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
