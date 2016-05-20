@@ -49,16 +49,27 @@ table {
     text-align: center;
     height: auto;
     margin: auto;
-    margin-top: -5%; }
+    margin-top: -5%;
+    width: 30%; }
 
   .shop {
     position: absolute;
     display: inline-block;
     right: 5%;
-    top: 30px; }
+    top: 30px;
+    width: 7%;
+    height: auto; }
 
   .imgLogo {
     display: inline-block; }
+
+  .imgMenu {
+    width: 10%;
+    height: auto; }
+
+  .disguizeLogo {
+    width: 60%;
+    height: auto; }
 
   .menuHamburger {
     position: absolute;
@@ -156,6 +167,13 @@ table {
     margin-left: 40%;
     margin-top: 14%; }
 
+  .textChoose {
+    text-align: center;
+    margin-top: 5%;
+    color: #bababa;
+    font-size: 1.2em;
+    font-weight: bold; }
+
   .chooseText {
     text-align: center;
     color: #bababa;
@@ -165,7 +183,8 @@ table {
     width: 100%;
     height: 200px;
     text-align: center;
-    background: linear-gradient(0deg, #e8b146, #fdde75); }
+    background: linear-gradient(0deg, #e8b146, #fdde75);
+    margin-top: 25%; }
 
   .disguizeYou {
     position: relative;
@@ -177,7 +196,7 @@ table {
     text-align: center; }
 
   .disguizeButton {
-    margin-top: 14%;
+    margin-top: 20%;
     width: 60%;
     height: 40px;
     border-radius: 10px;
@@ -392,10 +411,18 @@ table {
     font-weight: bold; }
 
   .greyBlock {
+    line-height: 25px;
+    text-align: center;
     padding-top: 3%;
     width: 100%;
     height: 550px;
+    margin-bottom: 10%;
     background-color: #eeeeee; }
+
+  .fleche {
+    width: 18%;
+    height: auto;
+    margin-left: 40%; }
 
   /*tunnel payement*/
   .pannier {
@@ -520,6 +547,14 @@ table {
     display: block;
     margin-top: -10%; }
 
+  .cadenas {
+    width: 10%;
+    height: auto; }
+
+  .cb {
+    width: 30%;
+    height: auto; }
+
   .date {
     width: 30px;
     height: 30px;
@@ -534,6 +569,616 @@ table {
     float: right;
     margin-right: 5%;
     margin-top: -4%; }
+
+  /* contact */
+  .why {
+    font-size: 1.5em;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+
+  .pinkPb {
+    width: 55%;
+    height: 40px;
+    background-color: #f62254;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 5%; }
+
+  .yellowPb {
+    width: 55%;
+    height: 40px;
+    background-color: #ebb64c;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 5%; }
+
+  .contactUs {
+    border: solid 1px #000000;
+    border-radius: 5px;
+    width: 90%;
+    height: 550px;
+    margin-left: 5%;
+    margin-bottom: 5%; }
+
+  .contact {
+    margin-left: 10%;
+    font-size: 1.3em;
+    margin-top: 5%;
+    text-align: left; }
+
+  .formContact {
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 5%;
+    font-weight: bold; }
+
+  .formInputContact {
+    border: solid 1px #f73f6b;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px; }
+
+  .formInputMessage {
+    border: solid 1px #f73f6b;
+    border-radius: 5px;
+    width: 90%;
+    height: 230px;
+    margin-top: 2%;
+    margin-left: 2%; }
+
+  .submitForm {
+    margin-top: 2%;
+    border: solid 1px #f62254;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    background-color: #f62254;
+    color: #ffffff;
+    font-weight: bold; } }
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  /* Menu */
+  .logo {
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    margin-top: 0;
+    width: 20%; }
+
+  .shop {
+    position: absolute;
+    display: inline-block;
+    right: 5%;
+    top: 25px;
+    width: 5%;
+    height: auto; }
+
+  .imgLogo {
+    display: inline-block; }
+
+  .imgMenu {
+    width: 10%;
+    height: auto; }
+
+  .disguizeLogo {
+    width: 60%;
+    height: auto; }
+
+  .menuHamburger {
+    position: absolute;
+    top: 29%;
+    left: 5%; }
+
+  a.logoLink {
+    text-align: center;
+    margin-top: -5%; }
+
+  /*end Menu*/
+  .searchBack img {
+    display: inline;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    position: absolute; }
+
+  .textTitle {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center; }
+
+  .searchInput {
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 15%;
+    width: 48%;
+    height: 8.3%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+
+  .searchButton {
+    position: absolute;
+    z-index: 1;
+    top: 65.1%;
+    right: 16%;
+    width: 21%;
+    height: 9.6%;
+    background-color: #fa6060;
+    background-image: url("../../../web/img/loupe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+  .annonceTitle {
+    position: relative;
+    text-align: center;
+    top: 8%;
+    font-size: 33px;
+    color: #888787;
+    margin-left: 20%;
+    margin-right: 20%; }
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #f1f0f0; }
+
+  .lastAnnonce {
+    display: inline-block;
+    width: 48%;
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 10px;
+    z-index: 3;
+    background-color: #FFFFFF;
+    border-radius: 10px; }
+
+  .annonce {
+    position: relative;
+    top: 511px;
+    width: 100%;
+    height: 493px;
+    background-color: #f1f0f0; }
+
+  .whyChoose {
+    position: relative;
+    width: 100%;
+    margin-top: 78%;
+    margin-bottom: 45%;
+    top: 20%;
+    height: 700px; }
+
+  .chooseImg {
+    margin-left: 46%;
+    margin-top: 14%; }
+
+  .chooseText {
+    text-align: center;
+    color: #bababa;
+    margin-top: 8%;
+    font-size: 1.1em; }
+
+  .textChoose {
+    text-align: center;
+    margin-top: 5%;
+    color: #bababa;
+    font-size: 1.2em;
+    font-weight: bold; }
+
+  .findCostume {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background: linear-gradient(0deg, #e8b146, #fdde75);
+    margin-top: 8%; }
+
+  .disguizeYou {
+    font-size: 2.8em;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 20%; }
+
+  .disguizeButton {
+    margin-top: 9%;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(0deg, #e8b146, #fdde75);
+    color: #FFFFFF; }
+
+  .footer {
+    background-color: #515151;
+    width: 100%;
+    height: 300px; }
+
+  hr {
+    width: 80%;
+    background-color: #FFFFFF;
+    height: 1px; }
+
+  .footerText {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 55px; }
+
+  /* menu mobile */
+  .header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(0deg, #e8b146, #fdde75);
+    position: static;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3; }
+
+  .menu {
+    float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    background-color: #272727;
+    transform: translateX(-250px);
+    transition-duration: 0.3s;
+    z-index: 10000; }
+    .menu a {
+      padding: 0 20px;
+      display: block;
+      height: 40px;
+      text-decoration: none;
+      text-align: center;
+      border-bottom: solid 1px #727171;
+      color: #ffffff; }
+    .menu a:hover {
+      color: #00A000; }
+    .menu .logoMenu {
+      height: 100px;
+      margin-top: 15%; }
+
+  .header__icon {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    cursor: pointer; }
+    .header__icon:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 0;
+      top: 12px;
+      left: 25px;
+      box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff; }
+
+  .site-pusher {
+    transition-duration: 0.3s;
+    transform: translateX(0px);
+    height: 100%; }
+
+  .with--sidebar .site-pusher {
+    transform: translateX(250px); }
+
+  /*end menu mobile */
+  /*page catégorie*/
+  .searchWhere {
+    background: #e8b146;
+    color: #FFFFFF;
+    padding-bottom: 5%; }
+
+  .inputCity {
+    width: 20%;
+    height: 30px;
+    background: #e8b146;
+    border: solid 1px #FFFFFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 3%; }
+
+  .inputNumberLeft {
+    width: 10%;
+    height: 30px;
+    background: #e8b146;
+    border: solid 1px #FFFFFF;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 3%; }
+
+  .inputNumberRight {
+    width: 10%;
+    height: 30px;
+    background: #e8b146;
+    border: solid 1px #FFFFFF;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 3%; }
+
+  .searchText {
+    margin-left: 25%; }
+
+  .container {
+    background-color: #ffffff; }
+
+  .searchInputType {
+    position: absolute;
+    z-index: 1;
+    top: 225px;
+    left: 15%;
+    width: 48%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+
+  .searchButtonType {
+    position: absolute;
+    z-index: 1;
+    top: 225px;
+    right: 17%;
+    width: 20%;
+    height: 45px;
+    margin-left: -10px;
+    background-color: #fa6060;
+    background-image: url("../../../web/img/loupe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+  .annonceCatFirst {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-top: 35%;
+    margin-left: 10px;
+    z-index: 3;
+    background-color: #ff0000;
+    border-radius: 10px; }
+
+  .annonceCat {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    margin-left: 10px;
+    z-index: 3;
+    background-color: #ff0000;
+    border-radius: 10px; }
+
+  .detail {
+    display: inline-block;
+    margin-left: 5%;
+    line-height: 40px; }
+    .detail .price {
+      color: #f25a5a;
+      font-size: 1.5em;
+      font-weight: bold; }
+    .detail .avis {
+      color: #ffdc66;
+      font-size: 1.2em; }
+    .detail .costumeName {
+      color: #6c6c6c;
+      font-size: 1.2em; }
+    .detail .adress {
+      color: #a7a7a7;
+      font-size: 1.2em; }
+
+  /*CGU*/
+  .pinkCGU {
+    width: 100%;
+    height: 60px;
+    background-color: #f62254;
+    text-align: center;
+    padding-top: 5%;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold; }
+
+  .CGU {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+    line-height: 25px;
+    text-align: center; }
+
+  .title {
+    margin-top: 0;
+    display: block;
+    color: #6c6c6c;
+    font-size: 2em;
+    font-weight: bold; }
+
+  .greyBlock {
+    margin-top: 3%;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 3%;
+    width: 100%;
+    height: 480px;
+    background-color: #eeeeee; }
+
+  .fleche {
+    margin-left: 40%; }
+
+  /*tunnel payement*/
+  .pannier {
+    display: block;
+    margin-top: 5%;
+    color: #c8c8c8;
+    text-align: center;
+    font-size: 1.2em; }
+
+  .pannierContent {
+    width: 90%;
+    height: 190px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-left: 2%; }
+    .pannierContent span {
+      display: block;
+      font-size: 1em; }
+    .pannierContent .pricePannier {
+      display: inline-block;
+      float: right;
+      margin-right: 5%;
+      margin-top: 2%; }
+    .pannierContent .dateLocation {
+      margin-top: 38px;
+      font-size: 16px; }
+    .pannierContent .imgContent {
+      display: inline-block;
+      width: 25%;
+      height: 50px;
+      background-color: #00A000;
+      float: left;
+      margin-right: 2%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .pannierContent .desguiseContent {
+      display: inline-block;
+      float: left; }
+    .pannierContent .pannierButton {
+      margin-top: 3%;
+      margin-right: 80%;
+      border-radius: 5px;
+      border: solid 1px #000000;
+      background-color: #FFFFFF;
+      color: #000000; }
+    .pannierContent .pannierButton1 {
+      border-radius: 5px;
+      border: solid 1px #000000;
+      background-color: #FFFFFF;
+      color: #000000;
+      float: right;
+      margin-top: -19px;
+      margin-right: 29px; }
+    .pannierContent hr {
+      background-color: #b0afaf; }
+
+  .personnalInfo {
+    background-color: #f1f0f0;
+    width: 100%;
+    height: 400px; }
+
+  .infoTitle {
+    color: #555555;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 5%; }
+
+  .imgOne {
+    margin-left: 5%;
+    margin-top: 5%; }
+
+  .titlePay {
+    margin-top: -29px;
+    margin-left: 72px;
+    color: #3d3d3d;
+    font-size: 1.2em;
+    font-weight: bold; }
+
+  form {
+    display: block;
+    margin-top: 5%;
+    text-align: center; }
+
+  .formInput {
+    float: right;
+    border-radius: 5px;
+    border: solid 1px #bebebe;
+    margin-right: 6%; }
+
+  .deliveryTips {
+    font-size: 0.8em;
+    margin-left: 7px;
+    margin-top: 5%;
+    text-align: center; }
+
+  .deliveryChoice {
+    margin-left: 68px;
+    margin-top: 20px; }
+
+  .centerLogo {
+    text-align: center; }
+
+  .payingTab {
+    margin-top: 5%;
+    border: solid 1px #000000;
+    width: 90%;
+    height: 350px;
+    margin-left: 2%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-bottom: 5%; }
+
+  .securePay {
+    font-size: 1.5em;
+    margin-left: 31%;
+    display: block;
+    margin-top: -5%;
+    margin-bottom: 3%; }
+
+  .cadenas {
+    margin-top: 1%;
+    width: 5%;
+    height: auto; }
+
+  .cb {
+    width: 17%;
+    height: auto; }
+
+  .date {
+    width: 30px;
+    height: 30px;
+    margin-top: 5%; }
+
+  .crypto {
+    width: 140px;
+    height: 20px;
+    margin-top: 5%; }
+
+  .price {
+    float: right;
+    margin-right: 5%;
+    margin-top: -2%; }
 
   /* contact */
   .why {
