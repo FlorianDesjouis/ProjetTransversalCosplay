@@ -10,7 +10,7 @@ class DefaultController extends Controller
     {
     	$em = $this->getDoctrine()->getEntityManager();
         $connection = $em->getConnection();
-        $statement = $connection->prepare("SELECT * FROM article ORDER BY dateCreation LIMIT 2");
+        $statement = $connection->prepare("SELECT * FROM article ORDER BY dateCreation DESC LIMIT 2");
         $statement->execute();
         $results = $statement->fetchAll();
 
@@ -22,5 +22,10 @@ class DefaultController extends Controller
     public function cguAction()
     {
          return $this->render('DesguizeBundle:Default:cgu.html.twig');
+    }
+
+        public function contactAction()
+    {
+         return $this->render('DesguizeBundle:Default:contact.html.twig');
     }
 }

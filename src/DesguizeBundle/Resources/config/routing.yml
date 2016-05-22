@@ -5,3 +5,7 @@ desguize_homepage:
 desguize_cgu:
     path:     /cgu
     defaults: { _controller: DesguizeBundle:Default:cgu }
+
+desguize_contact:
+    path:     /contact
+    defaults: { _controller: DesguizeBundle:Default:contact }

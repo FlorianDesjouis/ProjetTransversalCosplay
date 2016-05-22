@@ -25,12 +25,11 @@ class ArticleController extends Controller
      */
     public function indexAction()
     {
-        $article = new Article();
         $user = $this->getUser();
-        $article->setUserId($user->getId());
+        $userId = $user->getId();
         $em = $this->getDoctrine()->getEntityManager();
         $connection = $em->getConnection();
-        $statement = $connection->prepare("SELECT * FROM article WHERE userId=".$articles);
+        $statement = $connection->prepare("SELECT * FROM article WHERE userId=".$userId);
         $statement->execute();
         $results = $statement->fetchAll();
 

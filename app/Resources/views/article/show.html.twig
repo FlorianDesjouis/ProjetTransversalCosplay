@@ -11,18 +11,22 @@
                 {% endif %}
             </p>
         </div>
-        <ul>
-            <li>
-                <a href="{{ path('article_index') }}"><button class='buttonForm'>Retour</button></a>
-            </li>
-            <li>
-                <a href="{{ path('article_edit', { 'id': article.id }) }}"><button class='buttonForm'>Modifier</button></a>
-            </li>
-            <li>
-                {{ form_start(delete_form) }}
-                    <input class="buttonForm" type="submit" value="Supprimer">
-                {{ form_end(delete_form) }}
-            </li>
-        </ul>
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") and app.user.id == article.userId  %}
+            <ul>
+                <li>
+                    <a href="{{ path('article_index') }}"><button class='buttonForm'>Retour</button></a>
+                </li>
+                <li>
+                    <a href="{{ path('article_edit', { 'id': article.id }) }}"><button class='buttonForm'>Modifier</button></a>
+                </li>
+                <li>
+                    {{ form_start(delete_form) }}
+                        <input class="buttonForm" type="submit" value="Supprimer">
+                    {{ form_end(delete_form) }}
+                </li>
+            </ul>
+        {% else %}
+            
+        {% endif %}
     </div>
 {% endblock %}

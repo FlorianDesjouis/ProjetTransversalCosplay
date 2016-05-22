@@ -83,3 +83,10 @@ fos_comment:
         model:
             comment: FOS\CommentBundle\Document\Comment
             thread: FOS\CommentBundle\Document\Thread
+
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+    bundles: [ "FOSCommentBundle" ]

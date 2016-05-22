@@ -365,12 +365,11 @@ table {
   }
   .site-pusher {
     transition-duration: 0.3s;
-    transform: translateX(0px);
     height: 100%;
   }
   .with--sidebar {
     .site-pusher {
-      transform: translateX(250px);
+      transform: translateX(0%);
     }
   }
   /*end menu mobile */

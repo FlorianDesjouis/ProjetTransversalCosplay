@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+        <main class="content, container, centred">
+        <div class="pinkCGU">Nous Contacter</div>
+        <div class="why">Pourquoi ?</div>
+        <div class="pinkPb">Annonce Refusée</div>
+        <div class="yellowPb">Gestion D'annonce</div>
+        <div class="pinkPb">Sécurité</div>
+        <div class="yellowPb">Gestion de compte</div>
+        <div class="pinkPb, pinkPB1">Problème technique</div>
+    </main>
+    <form class="contactUs">
+        <div class="contact">Contactez nous</div>
+        <hr>
+        <div class="formContact">Nom*  <input class="formInputContact" type="text"></div>
+        <div class="formContact">Email* <input class="formInputContact" type="email"></div>
+        <div class="formContact">Message* <br><textarea class="formInputMessage"></textarea></div>
+        <input class="submitForm" type="button" value="Send">
+    </form>
+    <div class="greyContact">Le présent site Internet  www.disguize.fr est édité par la société DISGUIZE dont le siège social est situé à 95 avenue Parmentier, 75011 PARIS.<br><br>
+
+        TPE au capital de 90 000€,<br>
+
+        Numéro de TVA FR17500375796<br>
+
+        Téléphone : 01 23 95 89 30 E-mail : contact@disguize.fr<br>
+
+        Nos conseillers sont à votre disposition du lundi au vendredi de 9 heures à 17 heures.<br>
+    </div>
+    <div class="findCostume">
+        <span class="disguizeYou">Déguisez-vous</span>
+        <button class="disguizeButton">Trouver un costume</button>
+    </div>
+{% endblock %}

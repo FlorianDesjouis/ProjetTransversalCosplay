@@ -98,9 +98,17 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             return array (  '_controller' => 'DesguizeBundle\\Controller\\DefaultController::indexAction',  '_route' => 'desguize_homepage',);
         }
 
-        // desguize_cgu
-        if ($pathinfo === '/cgu') {
-            return array (  '_controller' => 'DesguizeBundle\\Controller\\DefaultController::cguAction',  '_route' => 'desguize_cgu',);
+        if (0 === strpos($pathinfo, '/c')) {
+            // desguize_cgu
+            if ($pathinfo === '/cgu') {
+                return array (  '_controller' => 'DesguizeBundle\\Controller\\DefaultController::cguAction',  '_route' => 'desguize_cgu',);
+            }
+
+            // desguize_contact
+            if ($pathinfo === '/contact') {
+                return array (  '_controller' => 'DesguizeBundle\\Controller\\DefaultController::contactAction',  '_route' => 'desguize_contact',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/log')) {

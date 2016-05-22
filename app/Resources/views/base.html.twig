@@ -7,7 +7,11 @@
         <link rel="stylesheet" href="{{ asset('bundles/desguize/css/style.css') }}">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block javascripts %}
+            <script src="{{ asset('bundles/desguize/js/jquery-1.11.3.min.js') }}"></script>
+            <script src="{{ asset('bundles/desguize/js/app.js') }}"></script>
+        {% endblock %}
+        <!--<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />-->
     </head>
     <body>
         <header role="banner" class="header">
@@ -15,39 +19,38 @@
             <a class="logoLink" href="#">
                 <img class="logo"  src="{{ asset('bundles/desguize/images/Disguize.png') }}">
             </a>
-            <nav role="menu" class="menu">
-                <a href="#" class="logoMenu">
+            <nav role="menu" class="menu site-cache">
+                <a href="/" class="logoMenu">
                     <img class="disguizeLogo" src="{{ asset('bundles/desguize/images/DisguizeLogo.png') }}">
                 </a>
-                <a href="#">
+                <a href="/">
                     <img class="imgMenu" src="{{ asset('bundles/desguize/images/Accueil.png') }}">
                     &nbsp;&nbsp;Accueil
                 </a>
-                <a href="#">
+                <a href="/article/new">
                     <img class="imgMenu" src="{{ asset('bundles/desguize/images/annonce.png') }}">
                     &nbsp;&nbsp;Déposer une annonce
                 </a>
-                <a href="#"><img class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <a href="/login"><img class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
+                        &nbsp;&nbsp;Connexion
+                    </a>
+                {% else %}
+                    <a href="/register"><img class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
                     &nbsp;&nbsp;Inscription
-                </a>
-                <a href="#"><img class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
-                    &nbsp;&nbsp;Connexion
-                </a>
+                    </a>
+                {% endif %}
             </nav>
             <img  class="shop" src="{{ asset('bundles/desguize/images/Shop.png') }}">
         </header>
         {% block body %}{% endblock %}
         <footer class="footer">
-            <div class="footerText">Nous contacter</div>
+            <div class="footerText"><a href='contact'>Nous contacter</a></div>
             <div class="footerText"><a href='cgu'>CGU</a></div>
             <div class="footerText">Mentions légales</div>
             <hr>
             <div class="footerText">© Disguize.fr - 2016</div>
             <div class="footerText">Locations de déguisements entre particuliers</div>
         </footer>
-        {% block javascripts %}
-            <script src="{{ asset('bundles/desguize/js/jquery-1.11.3.min.js') }}"></script>
-            <script src="{{ asset('bundles/desguize/js/app.js') }}"></script>
-        {% endblock %}
     </body>
 </html>
