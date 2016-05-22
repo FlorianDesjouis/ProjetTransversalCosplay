@@ -13,3 +13,7 @@ desguize_contact:
 desguize_categorie:
     path:     /categorie
     defaults: { _controller: DesguizeBundle:Default:categorie }
+
+desguize_pay:
+    path:     /pay
+    defaults: { _controller: DesguizeBundle:Default:pay }

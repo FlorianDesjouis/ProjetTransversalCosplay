@@ -129,6 +129,11 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
         }
 
+        // desguize_pay
+        if ($pathinfo === '/pay') {
+            return array (  '_controller' => 'DesguizeBundle\\Controller\\DefaultController::payAction',  '_route' => 'desguize_pay',);
+        }
+
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {
                 // fos_user_security_login

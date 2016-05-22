@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+        <main role="main" class="content, container">
+        <span class="pannier">Contenu de votre pannier</span>
+        <div class="pannierContent">
+            <div class="imgContent"></div>
+            <span class="desguiseContent">x1 déguisement de spider-man (taille L/M)</span>
+            <span class="pricePannier">Prix unitaire : 11.40€</span>
+            <span class="dateLocation">du 15/05/2016 au 18/05/2016</span>
+            <input type="button" class="pannierButton" value="Retirer cet article">
+            <hr class="pannierHR">
+            <span class="pricePannier">Sous total : 11.40€</span>
+            <input type="button" class="pannierButton" value="Continuer vos achats">
+            <input type="button" class="pannierButton1" value="Vider le panier">
+        </div>
+        <div class="personnalInfo">
+            <div class="infoTitle">Information personnelles</div>
+            <img class="imgOne" src="../../../web/img/one.png"><span class="titlePay">&nbsp;&nbsp;Authentification</span>
+            <form>
+                <div><span class="nameInput">Email : </span><input class="formInput" type="email"></div><br>
+                <div><span class="nameInput">Mot de passe : </span><input class="formInput" type="password"></div><br>
+                <div><span class="nameInput">Vérification MDP : </span><input class="formInput" type="password"></div><br>
+                <div><span class="nameInput">Nom : </span><input class="formInput" type="text"></div><br>
+                <div><span class="nameInput">Prénom : </span><input class="formInput" type="text"></div><br>
+                <div><span class="nameInput">Adresse : </span><input class="formInput" type="text"></div><br>
+                <div><span class="nameInput">Code Postal : </span><input class="formInput" type="number"></div><br>
+            </form>
+        </div>
+        <div class="DeliveryInfo">
+            <img class="imgOne" src="../../../web/img/two.png"><span class="titlePay">&nbsp;&nbsp;Informations de livraisons</span>
+            <div class="deliveryTips">L’adresse de livraison est facultative, vous pouvez aussi bien aller chercher votre déguisement directement chez le loueur.</div>
+            <div><input class="deliveryChoice" type="checkbox" name="delivery" value="yes">Je veux me faire livrer</div>
+            <form>
+                <div><span class="nameInput">Adresse : </span><input class="formInput" type="text"></div><br>
+                <div><span class="nameInput">Ville : </span><input class="formInput" type="text"></div><br>
+                <div><span class="nameInput">Code Postal : </span><input class="formInput" type="number"></div><br>
+                <div class="deliveryTips">Si vous habitez en France métropolitaine, Disguize vous expédie votre commande par Coliposte. Les frais de livraison sont de 9€. </div>
+                <img class="centerLogo" src="../../../web/img/coliposte.png">
+            </form>
+        </div>
+        <div class="paying">
+            <img class="imgOne" src="../../../web/img/three.png"><span class="titlePay">&nbsp;&nbsp;Informations bancaires</span>
+            <div class="payingTab">
+                <img class="cadenas"  src="../../../web/img/cadenas.png"><div class="securePay">Paiement Sécurisé</div>
+                <hr>
+                <span>Numéro de Carte : </span>
+                <input type="number"><br>
+                <span>Cryptogramme visuel : </span>
+                <input class="crypto" type="number"><br>
+                <span>Date d'expiration : </span>
+                <input class="date" type="number"> / <input class="date" type="number"><br>
+                <span>Titulaire de la carte : </span>
+                <input class="crypto" type="text"><br><br>
+                <img class="cb"  src="../../../web/img/CB.png">
+                <img  class="cb" src="../../../web/img/mastercard.png">
+                <img class="cb"  src="../../../web/img/visa.png">
+                <img class="cb" src="../../../web/img/verifvisa.png">
+                <img class="cb"  src="../../../web/img/verifmastercard.png">
+            </div>
+        </div>
+        <img class="imgOne" src="../../../web/img/four.png"><span class="titlePay">&nbsp;&nbsp;Récapitulatif de la commande et validation</span>
+        <div class="pannierContent">
+            <div class="imgContent"></div>
+            <span class="desguiseContent">x1 déguisement de spider-man (taille L/M)</span>
+            <span class="pricePannier">Prix unitaire : 11.40€</span>
+            <span class="dateLocation">du 15/05/2016 au 18/05/2016</span>
+            <hr class="pannierHR">
+            <span>Livraison non prix en charge</span><span class="price">0.00€</span>
+            <hr class="pannierHR">
+            <span>Caution</span><span class="price">25.00€</span>
+            <hr class="pannierHR">
+            <span class="pricePannier">Sous total : 36.40€</span>
+        </div>
+    </main>
+    <div class="findCostume">
+        <span class="disguizeYou">Déguisez-vous!</span>
+        <button class="disguizeButton">Trouver un costume</button>
+    </div>
+{% endblock %}

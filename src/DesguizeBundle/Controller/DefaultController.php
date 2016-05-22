@@ -33,4 +33,9 @@ class DefaultController extends Controller
     {
          return $this->render('DesguizeBundle:Default:categorie.html.twig');
     }
+
+    public function payAction()
+    {
+         return $this->render('DesguizeBundle:Default:pay.html.twig');
+    }
 }
