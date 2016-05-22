@@ -540,7 +540,7 @@ hr {
 
 .imgOne {
   margin-left: 5%;
-  margin-top: 5%; }
+  margin-top: 2%; }
 
 .titlePay {
   margin-top: -29px;
@@ -576,9 +576,9 @@ form {
 .payingTab {
   margin-top: 5%;
   border: solid 1px #000000;
-  width: 90%;
+  width: 55%;
   height: 350px;
-  margin-left: 2%;
+  margin-left: 19%;
   padding-left: 5%;
   padding-top: 2%;
   padding-bottom: 5%;
@@ -606,12 +606,12 @@ form {
   margin-top: 3%; }
 
 .numberCard {
-  margin-top: 1%; }
+  margin-top: 2%; }
 
 .crypto {
   width: 140px;
   height: 20px;
-  margin-top: 4%; }
+  margin-top: 3%; }
 
 .price {
   float: right;
@@ -1330,7 +1330,10 @@ form {
       border-radius: 5px;
       border: solid 1px #000000;
       background-color: #FFFFFF;
-      color: #000000; }
+      color: #000000;
+      width: 47%;
+      height: 16%;
+      font-size: 0.8em; }
     .pannierContent .pannierButton1 {
       border-radius: 5px;
       border: solid 1px #000000;
@@ -1338,7 +1341,10 @@ form {
       color: #000000;
       float: right;
       margin-top: -19px;
-      margin-right: 29px; }
+      margin-right: 4px;
+      width: 47%;
+      height: 16%;
+      font-size: 0.8em; }
     .pannierContent hr {
       background-color: #b0afaf; }
 
@@ -2076,20 +2082,26 @@ form {
       display: inline-block;
       float: left; }
     .pannierContent .pannierButton {
-      margin-top: 3%;
+      margin-top: 2%;
       margin-right: 80%;
       border-radius: 5px;
       border: solid 1px #000000;
       background-color: #FFFFFF;
-      color: #000000; }
+      color: #000000;
+      width: 23%;
+      height: 15%;
+      font-size: 0.8em; }
     .pannierContent .pannierButton1 {
       border-radius: 5px;
       border: solid 1px #000000;
       background-color: #FFFFFF;
       color: #000000;
       float: right;
-      margin-top: -19px;
-      margin-right: 29px; }
+      margin-top: -29px;
+      margin-right: 7px;
+      width: 25%;
+      height: 14%;
+      font-size: 0.8em; }
     .pannierContent hr {
       background-color: #b0afaf; }
 
