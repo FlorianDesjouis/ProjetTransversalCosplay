@@ -15,33 +15,36 @@
     </head>
     <body>
         <header role="banner" class="header">
+            <a href="#" class="newAd">Déposer une annonce</a>
+            <a href="#" class="registerHeader">Inscription</a>
+            <a href="#" class="connectHeader">Connexion</a>
             <a href="#" class="header__icon" id="header__icon"></a>
             <a class="logoLink" href="#">
-                <img class="logo"  src="{{ asset('bundles/desguize/images/Disguize.png') }}">
+                <img alt="logoName" class="logo"  src="{{ asset('bundles/desguize/images/Disguize.png') }}">
             </a>
-            <nav role="menu" class="menu site-cache">
+            <nav role="navigation" class="menu site-cache">
                 <a href="/" class="logoMenu">
-                    <img class="disguizeLogo" src="{{ asset('bundles/desguize/images/DisguizeLogo.png') }}">
+                    <img alt="logo" class="disguizeLogo" src="{{ asset('bundles/desguize/images/DisguizeLogo.png') }}">
                 </a>
                 <a href="/">
-                    <img class="imgMenu" src="{{ asset('bundles/desguize/images/Accueil.png') }}">
+                    <img alt="accueil" class="imgMenu" src="{{ asset('bundles/desguize/images/Accueil.png') }}">
                     &nbsp;&nbsp;Accueil
                 </a>
                 <a href="/article/new">
-                    <img class="imgMenu" src="{{ asset('bundles/desguize/images/annonce.png') }}">
+                    <img alt="annonce" class="imgMenu" src="{{ asset('bundles/desguize/images/annonce.png') }}">
                     &nbsp;&nbsp;Déposer une annonce
                 </a>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <a href="/login"><img class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
+                    <a href="/login"><img alt="connexion" class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
                         &nbsp;&nbsp;Connexion
                     </a>
                 {% else %}
-                    <a href="/register"><img class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
+                    <a href="/register"><img alt="inscription" class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
                     &nbsp;&nbsp;Inscription
                     </a>
                 {% endif %}
             </nav>
-            <img  class="shop" src="{{ asset('bundles/desguize/images/Shop.png') }}">
+            <img alt="shop" class="shop" src="{{ asset('bundles/desguize/images/Shop.png') }}">
         </header>
         {% block body %}{% endblock %}
         <footer class="footer">
