@@ -72,12 +72,10 @@ table {
   display: inline-block; }
 
 .imgMenu {
-  width: 10%;
-  height: auto; }
+  display: none; }
 
 .disguizeLogo {
-  width: 60%;
-  height: auto; }
+  display: none; }
 
 .menuHamburger {
   position: absolute;
@@ -101,13 +99,7 @@ a.logoLink {
   z-index: 3; }
 
 .menu a {
-  padding: 0 20px;
-  display: block;
-  height: 40px;
-  text-decoration: none;
-  text-align: center;
-  border-bottom: solid 1px #727171;
-  color: #ffffff; }
+  display: none; }
 .menu a:hover {
   color: #00A000; }
 .menu .logoMenu {
@@ -316,7 +308,7 @@ hr {
   line-height: 55px; }
 
 /*end accueil*/
-/*page cat├®gorie*/
+/*page catégorie*/
 .searchWhere {
   background: #e8b146;
   color: #FFFFFF;
@@ -896,11 +888,16 @@ form {
 
   .imgMenu {
     width: 10%;
-    height: auto; }
+    height: auto;
+    display: inline-block; }
 
   .disguizeLogo {
     width: 60%;
-    height: auto; }
+    height: auto;
+    margin-left: 19%;
+    margin-bottom: 24%;
+    margin-top: 12%;
+    display: inline-block; }
 
   .menuHamburger {
     position: absolute;
@@ -1125,7 +1122,7 @@ form {
     transform: translateX(0%); }
 
   /*end menu mobile */
-  /*page cat├®gorie*/
+  /*page catégorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;
@@ -1637,11 +1634,16 @@ form {
 
   .imgMenu {
     width: 10%;
-    height: auto; }
+    height: auto;
+    display: inline-block; }
 
   .disguizeLogo {
     width: 60%;
-    height: auto; }
+    height: auto;
+    margin-left: 19%;
+    margin-bottom: 24%;
+    margin-top: 12%;
+    display: inline-block; }
 
   .menuHamburger {
     position: absolute;
@@ -1870,7 +1872,7 @@ form {
     transform: translateX(250px); }
 
   /*end menu mobile */
-  /*page cat├®gorie*/
+  /*page catégorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;

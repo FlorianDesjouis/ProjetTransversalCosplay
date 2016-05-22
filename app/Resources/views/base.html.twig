@@ -24,22 +24,22 @@
             </a>
             <nav role="navigation" class="menu site-cache">
                     <img alt="logo" class="disguizeLogo" src="{{ asset('bundles/desguize/images/DisguizeLogo.png') }}">
-                <a href="/">
+                <a class="textMenuMobile" href="/">
                     <img alt="accueil" class="imgMenu" src="{{ asset('bundles/desguize/images/Accueil.png') }}">
                     &nbsp;&nbsp;Accueil
                 </a>
-                <a href="/article/new">
+                <a class="textMenuMobile" href="/article/new">
                     <img alt="annonce" class="imgMenu" src="{{ asset('bundles/desguize/images/annonce.png') }}">
                     &nbsp;&nbsp;Déposer une annonce
                 </a>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <a href="/profile">&nbsp;&nbsp;Profil</a>
-                    <a href="/logout">&nbsp;&nbsp;Déconnexion</a>
+                    <a class="textMenuMobile" href="/profile">&nbsp;&nbsp;Profil</a>
+                    <a class="textMenuMobile" href="/logout">&nbsp;&nbsp;Déconnexion</a>
                 {% else %}
-                    <a href="/login"><img class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
+                    <a class="textMenuMobile" href="/login"><img class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
                         &nbsp;&nbsp;Connexion
                     </a>
-                    <a href="/register"><img class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
+                    <a class="textMenuMobile" href="/register"><img class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
                         &nbsp;&nbsp;Inscription
                     </a>
                 {% endif %}
