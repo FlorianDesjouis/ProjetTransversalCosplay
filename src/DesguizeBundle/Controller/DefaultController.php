@@ -18,4 +18,9 @@ class DefaultController extends Controller
             'articles' => $results,
         ));
     }
+
+    public function cguAction()
+    {
+         return $this->render('DesguizeBundle:Default:cgu.html.twig');
+    }
 }

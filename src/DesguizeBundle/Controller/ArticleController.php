@@ -25,12 +25,17 @@ class ArticleController extends Controller
      */
     public function indexAction()
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $articles = $em->getRepository('DesguizeBundle:Article')->findAll();
+        $article = new Article();
+        $user = $this->getUser();
+        $article->setUserId($user->getId());
+        $em = $this->getDoctrine()->getEntityManager();
+        $connection = $em->getConnection();
+        $statement = $connection->prepare("SELECT * FROM article WHERE userId=".$articles);
+        $statement->execute();
+        $results = $statement->fetchAll();
 
         return $this->render('article/index.html.twig', array(
-            'articles' => $articles,
+            'articles' => $results,
         ));
     }
 

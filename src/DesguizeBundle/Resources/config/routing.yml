@@ -1,3 +1,7 @@
 desguize_homepage:
     path:     /
     defaults: { _controller: DesguizeBundle:Default:index }
+
+desguize_cgu:
+    path:     /cgu
+    defaults: { _controller: DesguizeBundle:Default:cgu }
