@@ -9,3 +9,7 @@ desguize_cgu:
 desguize_contact:
     path:     /contact
     defaults: { _controller: DesguizeBundle:Default:contact }
+
+desguize_categorie:
+    path:     /categorie
+    defaults: { _controller: DesguizeBundle:Default:categorie }

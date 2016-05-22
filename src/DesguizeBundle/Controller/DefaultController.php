@@ -24,8 +24,13 @@ class DefaultController extends Controller
          return $this->render('DesguizeBundle:Default:cgu.html.twig');
     }
 
-        public function contactAction()
+    public function contactAction()
     {
          return $this->render('DesguizeBundle:Default:contact.html.twig');
+    }
+
+    public function categorieAction()
+    {
+         return $this->render('DesguizeBundle:Default:categorie.html.twig');
     }
 }

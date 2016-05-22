@@ -23,9 +23,7 @@
                 <img alt="logoName" class="logo"  src="{{ asset('bundles/desguize/images/Disguize.png') }}">
             </a>
             <nav role="navigation" class="menu site-cache">
-                <a href="/" class="logoMenu">
                     <img alt="logo" class="disguizeLogo" src="{{ asset('bundles/desguize/images/DisguizeLogo.png') }}">
-                </a>
                 <a href="/">
                     <img alt="accueil" class="imgMenu" src="{{ asset('bundles/desguize/images/Accueil.png') }}">
                     &nbsp;&nbsp;Accueil
@@ -35,12 +33,14 @@
                     &nbsp;&nbsp;Déposer une annonce
                 </a>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <a href="/login"><img alt="connexion" class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
+                    <a href="/profile">&nbsp;&nbsp;Profil</a>
+                    <a href="/logout">&nbsp;&nbsp;Déconnexion</a>
+                {% else %}
+                    <a href="/login"><img class="imgMenu" src="{{ asset('bundles/desguize/images/connexion.png') }}">
                         &nbsp;&nbsp;Connexion
                     </a>
-                {% else %}
-                    <a href="/register"><img alt="inscription" class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
-                    &nbsp;&nbsp;Inscription
+                    <a href="/register"><img class="imgMenu" src="{{ asset('bundles/desguize/images/Inscription.png') }}">
+                        &nbsp;&nbsp;Inscription
                     </a>
                 {% endif %}
             </nav>
