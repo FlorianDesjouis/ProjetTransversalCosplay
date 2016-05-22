@@ -1,9 +1,9 @@
 {% trans_default_domain 'FOSUserBundle' %}
-<img src="{{ asset('bundles/desguize/images/defaultProfilePhoto.png') }}">
-<div class="fos_user_user_show">
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
-    <p>Prénom: {{ user.firstname }}</p>
-    <p>Nom: {{ user.lastname }}</p>
-    <p>Adresse: {{ user.address }} {{ user.postCode }} {{ user.town }}</p>
+<div class='profileContainer'>
+	<h1 class='profileTitle'>Profil</h1>
+	<img class='profilePhoto' src="{{ asset('bundles/desguize/images/'~user.photoProfile) }}">
+	<div class="fos_user_user_show infoProfile">
+	    <p>{{ user.username }}</p><br>
+	    <p>{{ user.email }}</p>
+	</div>
 </div>

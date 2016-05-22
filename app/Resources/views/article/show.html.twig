@@ -1,25 +1,28 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
-    <h1>{{ article.name }}</h1>
-    <img src="{{ asset('bundles/desguize/images/uploads/'~article.path) }}">
-    <p>{{ article.description }}</p>
-    <p>
-        {% if article.dateCreation %}
-            Posté le {{ article.dateCreation|date('Y-m-d') }} à {{ article.dateCreation|date('H:m:s') }}
-        {% endif %}
-    </p>
-    <ul>
-        <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+    <div class='profileContainer'>
+        <h1 class='profileTitle'>{{ article.name }}</h1>
+        <img class='articlePhoto' src="{{ asset('bundles/desguize/images/uploads/'~article.path) }}">
+        <div class='infoArticle'>
+        <p>{{ article.description }}</p>
+            <p>
+                {% if article.dateCreation %}
+                    Posté le {{ article.dateCreation|date('d/m/Y') }} à {{ article.dateCreation|date('H:m') }}
+                {% endif %}
+            </p>
+        </div>
+        <ul>
+            <li>
+                <a href="{{ path('article_index') }}"><button class='buttonForm'>Retour</button></a>
+            </li>
+            <li>
+                <a href="{{ path('article_edit', { 'id': article.id }) }}"><button class='buttonForm'>Modifier</button></a>
+            </li>
+            <li>
+                {{ form_start(delete_form) }}
+                    <input class="buttonForm" type="submit" value="Supprimer">
+                {{ form_end(delete_form) }}
+            </li>
+        </ul>
+    </div>
 {% endblock %}

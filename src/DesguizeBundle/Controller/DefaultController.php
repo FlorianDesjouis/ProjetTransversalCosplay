@@ -8,6 +8,14 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('DesguizeBundle:Default:index.html.twig');
+    	$em = $this->getDoctrine()->getEntityManager();
+        $connection = $em->getConnection();
+        $statement = $connection->prepare("SELECT * FROM article ORDER BY dateCreation LIMIT 2");
+        $statement->execute();
+        $results = $statement->fetchAll();
+
+        return $this->render('DesguizeBundle:Default:index.html.twig', array(
+            'articles' => $results,
+        ));
     }
 }

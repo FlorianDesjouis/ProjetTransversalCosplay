@@ -1,1 +1,35 @@
-Hello World!
+{% extends 'base.html.twig' %}
+{% block body %}
+	        <div class="content">
+            <div class="searchBack">
+                <img src="{{ asset('bundles/desguize/images/backImg.jpg') }}">
+                <span class="textTitle">20 000 Déguisements
+                prêts à être loués</span>
+                <input class="searchInput" type="text" placeholder="&nbsp;&nbsp;&nbsp;Quel costume voulez-vous ?">
+                <button class="searchButton" type="submit"></button>
+            </div>
+            <div class="annonce">
+                <div class="annonceTitle">Les Dernières annonces mises en ligne</div>
+                	{% for article in articles %}
+		                <div class="lastAnnonce">
+		                <a href="{{ path('article_show', { 'id': article.id }) }}">
+		                	<img class="articlePhotoHome" src="{{ asset('bundles/desguize/images/uploads/'~article.path) }}">
+		                </a>
+		                </div>
+		            {% endfor %}
+            </div>
+        </div>
+        <div class="whyChoose">
+            <div class="annonceTitle">Mais pourquoi choisir Disguize ?</div>
+            <img class="chooseImg" src="{{ asset('bundles/desguize/images/simple.png') }}"><div class="textChoose">Simple</div>
+            <div class="chooseText">Recherchez parmi un vaste choix de costumes en seulement quelques clics</div>
+            <img class="chooseImg" src="{{ asset('bundles/desguize/images/Rapide.png') }}"><div class="textChoose">Rapide</div>
+            <div class="chooseText">Nous nous engageons à vous livrer votre déguisement en peu de temps afin d'en profiter le plus tôt possible</div>
+            <img class="chooseImg" src="{{ asset('bundles/desguize/images/fiable.png') }}"><div class="textChoose">Fiable</div>
+            <div class="chooseText">Nous détectons les fausses annonces et nous vous assurons un paiement sécurisé</div>
+        </div>
+        <div class="findCostume">
+            <span class="disguizeYou">Déguisez-vous</span>
+            <button class="disguizeButton">Trouver un costume</button>
+        </div>
+{% endblock %}

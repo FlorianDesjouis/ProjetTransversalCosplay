@@ -163,6 +163,25 @@ Holdet bag siden.
     'form.new_password' => 'Ny adgangskode',
     'form.new_password_confirmation' => 'Gentag adgangskode',
   ),
+  'FOSCommentBundle' => 
+  array (
+    'fos_comment_comment_new_headline_first' => 'Vær den første til at kommentere',
+    'fos_comment_comment_new_headline' => 'Tilføj ny kommentar',
+    'fos_comment_comment_new_submit' => 'Send',
+    'fos_comment_comment_new_cancel' => 'Afbryd',
+    'fos_comment_comment_edit_submit' => 'Send',
+    'fos_comment_comment_edit_cancel' => 'Afbryd',
+    'fos_comment_comment_reply_reply_to' => 'Svarer %name%',
+    'fos_comment_comment_reply_cancel' => 'Afbryd',
+    'fos_comment_comment_show_by' => 'Af',
+    'fos_comment_comment_show_voteup' => 'Stem op',
+    'fos_comment_comment_show_votedown' => 'Stem ned',
+    'fos_comment_comment_show_reply' => 'Svar',
+    'fos_comment_comment_vote_score' => 'Score: ',
+    'fos_comment_comment_tree_load_more' => 'Hent flere svar',
+    'Showing %num% comment|Showing %num% comments' => 'Viser %num% kommentar|Viser %num% kommentare',
+    'fos_comment_rss_feed' => 'RSS format',
+  ),
 ));
 
 $catalogueFr = new MessageCatalogue('fr', array (
@@ -345,6 +364,32 @@ L\'équipe.
     'form.password_confirmation' => 'Vérification',
     'form.new_password' => 'Nouveau mot de passe',
     'form.new_password_confirmation' => 'Vérification',
+  ),
+  'FOSCommentBundle' => 
+  array (
+    'fos_comment_comment_new_headline_first' => 'Soyez le premier à commenter',
+    'fos_comment_comment_new_headline' => 'Ajouter un commentaire',
+    'fos_comment_comment_new_submit' => 'Poster',
+    'fos_comment_comment_new_cancel' => 'Annuler',
+    'fos_comment_comment_edit_submit' => 'Poster',
+    'fos_comment_comment_edit_cancel' => 'Annuler',
+    'fos_comment_comment_reply_reply_to' => 'Répondre à %name%',
+    'fos_comment_comment_reply_cancel' => 'Annuler',
+    'fos_comment_comment_show_by' => 'Par',
+    'fos_comment_comment_show_voteup' => 'J\'aime',
+    'fos_comment_comment_show_votedown' => 'Je n\'aime pas',
+    'fos_comment_comment_show_reply' => 'Répondre',
+    'fos_comment_comment_vote_score' => 'Score: ',
+    'fos_comment_comment_tree_load_more' => 'Afficher plus de réponses',
+    'Showing %num% comment|Showing %num% comments' => 'Afficher %num% commentaire|Afficher %num% commentaires',
+    'fos_comment_rss_feed' => 'Flux RSS',
+    'fos_comment_thread_close' => 'Fermer le fil de discussion',
+    'fos_comment_thread_open' => 'Ouvrir le fil de discussion',
+    'fos_comment_thread_comment_count' => '%count% commentaire|%count% commentaires',
+    'fos_comment_comment_edit' => 'Editer',
+    'fos_comment_comment_delete' => 'Supprimer le commentaire',
+    'fos_comment_comment_undelete' => 'Restaurer le commentaire',
+    'fos_comment_comment_deleted' => '[Supprimé]',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueFr);

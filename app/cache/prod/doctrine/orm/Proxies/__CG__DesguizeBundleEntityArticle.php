@@ -36,7 +36,7 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = array();
+    public static $lazyPropertiesDefaults = array('path' => NULL);
 
 
 
@@ -46,16 +46,60 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
      */
     public function __construct($initializer = null, $cloner = null)
     {
+        unset($this->path);
 
         $this->__initializer__ = $initializer;
         $this->__cloner__      = $cloner;
     }
 
+    /**
+     * 
+     * @param string $name
+     */
+    public function __get($name)
+    {
+        if (array_key_exists($name, $this->__getLazyProperties())) {
+            $this->__initializer__ && $this->__initializer__->__invoke($this, '__get', array($name));
 
+            return $this->$name;
+        }
 
+        trigger_error(sprintf('Undefined property: %s::$%s', __CLASS__, $name), E_USER_NOTICE);
+    }
 
+    /**
+     * 
+     * @param string $name
+     * @param mixed  $value
+     */
+    public function __set($name, $value)
+    {
+        if (array_key_exists($name, $this->__getLazyProperties())) {
+            $this->__initializer__ && $this->__initializer__->__invoke($this, '__set', array($name, $value));
 
+            $this->$name = $value;
 
+            return;
+        }
+
+        $this->$name = $value;
+    }
+
+    /**
+     * 
+     * @param  string $name
+     * @return boolean
+     */
+    public function __isset($name)
+    {
+        if (array_key_exists($name, $this->__getLazyProperties())) {
+            $this->__initializer__ && $this->__initializer__->__invoke($this, '__isset', array($name));
+
+            return isset($this->$name);
+        }
+
+        return false;
+    }
 
     /**
      * 
@@ -64,10 +108,10 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'articlePhoto', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId');
+            return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId', 'path', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'file');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'articlePhoto', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId');
+        return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'file');
     }
 
     /**
@@ -89,6 +133,7 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
                 }
             };
 
+            unset($this->path);
         }
     }
 
@@ -176,6 +221,72 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
     /**
      * {@inheritDoc}
      */
+    public function getAbsolutePath()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getAbsolutePath', array());
+
+        return parent::getAbsolutePath();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getWebPath()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWebPath', array());
+
+        return parent::getWebPath();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFile(\Symfony\Component\HttpFoundation\File\UploadedFile $file = NULL)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFile', array($file));
+
+        return parent::setFile($file);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFile()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFile', array());
+
+        return parent::getFile();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function removeFile($file)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeFile', array($file));
+
+        return parent::removeFile($file);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function upload()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'upload', array());
+
+        return parent::upload();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -257,28 +368,6 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
     /**
      * {@inheritDoc}
      */
-    public function setArticlePhoto($articlePhoto)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setArticlePhoto', array($articlePhoto));
-
-        return parent::setArticlePhoto($articlePhoto);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getArticlePhoto()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getArticlePhoto', array());
-
-        return parent::getArticlePhoto();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setUserId($userId)
     {
 
@@ -296,6 +385,28 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUserId', array());
 
         return parent::getUserId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPath($path)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPath', array($path));
+
+        return parent::setPath($path);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPath()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPath', array());
+
+        return parent::getPath();
     }
 
 }
