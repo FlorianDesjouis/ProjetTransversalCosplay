@@ -1,32 +1,34 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <div class='profileContainer'>
-        <h1 class='profileTitle'>{{ article.name }}</h1>
-        <img class='articlePhoto' src="{{ asset('bundles/desguize/images/uploads/'~article.path) }}">
-        <div class='infoArticle'>
-        <p>{{ article.description }}</p>
-            <p>
-                {% if article.dateCreation %}
-                    Posté le {{ article.dateCreation|date('d/m/Y') }} à {{ article.dateCreation|date('H:m') }}
+    {% for article in articles %}
+        <div class='profileContainer'>
+            <h1 class='profileTitle'>{{ article.name }}</h1>
+            <img class='articlePhotoWidth' src="{{ asset('bundles/desguize/images/uploads/'~article.path) }}">
+            <div class='infoArticle'>
+                <p>{{ article.description }}</p>
+                <p>
+                    {% if article.dateCreation %}
+                    Posté le {{ article.dateCreation|date('d/m/Y') }} à {{ article.dateCreation|date('H:m') }} par <div class='userArticle'>{{ article.username }}</div>
                 {% endif %}
-            </p>
-        </div>
-        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") and app.user.id == article.userId  %}
-            <ul>
-                <li>
-                    <a href="{{ path('article_index') }}"><button class='buttonForm'>Retour</button></a>
-                </li>
-                <li>
-                    <a href="{{ path('article_edit', { 'id': article.id }) }}"><button class='buttonForm'>Modifier</button></a>
-                </li>
-                <li>
-                    {{ form_start(delete_form) }}
+                </p>
+            </div>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") and app.user.id == article.userId  %}
+                <ul>
+                    <li>
+                        <a href="{{ path('article_edit', { 'id': article.id }) }}"><button class='buttonForm'>Modifier</button></a>
+                    </li>
+                    <li>
+                        {{ form_start(delete_form) }}
                         <input class="buttonForm" type="submit" value="Supprimer">
-                    {{ form_end(delete_form) }}
-                </li>
-            </ul>
-        {% else %}
-            
-        {% endif %}
-    </div>
+                        {{ form_end(delete_form) }}
+                    </li>
+                    <li>
+                        <a href="{{ path('article_index') }}"><button class='buttonForm'>Retour</button></a>
+                    </li>
+                </ul>
+            {% else %}
+                <a href=""><button class='buttonForm'>Commander</button></a>
+            {% endif %}
+        </div>
+    {% endfor %}
 {% endblock %}

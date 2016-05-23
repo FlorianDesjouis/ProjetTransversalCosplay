@@ -12,10 +12,10 @@
                 </div>
                 <div class='infoBlock'>
                     <a href="{{ path('article_show', { 'id': article.id }) }}">
-                        <p>{{ article.name }}</p>
+                        <p class="articleDescription">{{ article.name }}</p>
                     </a>
                     <br>
-                    <p>
+                    <p class="articleDate">
                         {% if article.dateCreation %}
                             Posté le {{ article.dateCreation|date('d/m/Y') }} à {{ article.dateCreation|date('H:m') }}
                         {% endif %}
