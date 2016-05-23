@@ -137,6 +137,8 @@ a.logoLink {
   text-align: center;
   border-radius: 5px;
   padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-top: 1%;
   text-decoration: none; }
 
 .connectHeader {
@@ -1093,7 +1095,7 @@ form {
 
   .menu {
     float: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1848,7 +1850,7 @@ form {
 
   .menu {
     float: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
