@@ -137,6 +137,8 @@ a.logoLink {
   text-align: center;
   border-radius: 5px;
   padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-top: 1%;
   text-decoration: none; }
 
 .connectHeader {
