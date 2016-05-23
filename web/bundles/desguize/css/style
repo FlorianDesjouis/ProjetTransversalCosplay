@@ -1093,7 +1093,7 @@ form {
 
   .menu {
     float: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1848,7 +1848,7 @@ form {
 
   .menu {
     float: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -2402,4 +2402,4 @@ form {
   .similarProduct {
     background-color: #f9f9f9; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.map */

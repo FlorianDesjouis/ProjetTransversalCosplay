@@ -153,7 +153,7 @@ a.logoLink {
 .connectHeader {
   position: absolute;
   z-index: 5;
-  right: 300px;
+  right: 15%;
   top: 30px;
   text-decoration: none;
   color: #FFFFFF;
@@ -163,7 +163,7 @@ a.logoLink {
 .registerHeader {
   position: absolute;
   z-index: 5;
-  right: 450px;
+  right: 25%;
   top: 30px;
   text-decoration: none;
   color: #FFFFFF;
@@ -1135,7 +1135,7 @@ form {
   }
   .menu {
     float: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1919,7 +1919,7 @@ form {
   }
   .menu {
     float: left;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1972,7 +1972,7 @@ form {
   }
   .with--sidebar {
     .site-pusher {
-      transform: translateX(250px);
+      transform: translateX(0px);
     }
   }
   /*end menu mobile */
