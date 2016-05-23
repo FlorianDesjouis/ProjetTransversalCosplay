@@ -15,11 +15,16 @@
     </head>
     <body>
         <header role="banner" class="header">
-            <a href="#" class="newAd">Déposer une annonce</a>
-            <a href="#" class="registerHeader">Inscription</a>
-            <a href="#" class="connectHeader">Connexion</a>
+            <a href="/article/new" class="newAd">Déposer une annonce</a>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <a class="registerHeader" href="/profile">&nbsp;&nbsp;Profil</a>
+                <a class="connectHeader" href="/logout">&nbsp;&nbsp;Déconnexion</a>
+            {% else %}
+                <a href="#" class="registerHeader">Inscription</a>
+                <a href="#" class="connectHeader">Connexion</a>
+            {% endif %}
             <a href="#" class="header__icon" id="header__icon"></a>
-            <a class="logoLink" href="#">
+            <a class="logoLink" href="/">
                 <img alt="logoName" class="logo"  src="{{ asset('bundles/desguize/images/Disguize.png') }}">
             </a>
             <nav role="navigation" class="menu site-cache">

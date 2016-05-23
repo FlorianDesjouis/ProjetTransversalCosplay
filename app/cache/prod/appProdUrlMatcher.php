@@ -27,6 +27,19 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
+        if (0 === strpos($pathinfo, '/js/35a8e64')) {
+            // _assetic_35a8e64
+            if ($pathinfo === '/js/35a8e64.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '35a8e64',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_35a8e64',);
+            }
+
+            // _assetic_35a8e64_0
+            if ($pathinfo === '/js/35a8e64_comments_1.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '35a8e64',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_35a8e64_0',);
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/article')) {
             // article_index
             if (rtrim($pathinfo, '/') === '/article') {

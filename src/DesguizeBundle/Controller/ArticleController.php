@@ -77,8 +77,14 @@ class ArticleController extends Controller
     {
         $deleteForm = $this->createDeleteForm($article);
 
+        $em = $this->getDoctrine()->getEntityManager();
+        $connection = $em->getConnection();
+        $statement = $connection->prepare("SELECT * FROM article JOIN user ON userId = user.Id WHERE article.id=".$article->getId());
+        $statement->execute();
+        $results = $statement->fetchAll();
+
         return $this->render('article/show.html.twig', array(
-            'article' => $article,
+            'articles' => $results,
             'delete_form' => $deleteForm->createView(),
         ));
     }
