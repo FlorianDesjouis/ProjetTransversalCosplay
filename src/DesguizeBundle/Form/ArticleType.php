@@ -17,6 +17,7 @@ class ArticleType extends AbstractType
         $builder
             ->add('name')
             ->add('description')
+            ->add('price')
             ->add('file')
         ;
     }

@@ -79,7 +79,7 @@ class ArticleController extends Controller
 
         $em = $this->getDoctrine()->getEntityManager();
         $connection = $em->getConnection();
-        $statement = $connection->prepare("SELECT * FROM article JOIN user ON userId = user.Id WHERE article.id=".$article->getId());
+        $statement = $connection->prepare("SELECT article.id, name, description, dateCreation, userId, path, price, username, address, birthdate, email, firstname, lastname, phone_number, post_code, town  FROM article JOIN user ON userId = user.Id WHERE article.id=".$article->getId());
         $statement->execute();
         $results = $statement->fetchAll();
 

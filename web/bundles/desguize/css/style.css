@@ -60,7 +60,8 @@ table {
 .profileTitle {
   color: #888787;
   font-size: 3em;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 3%; }
 
 .inputForm {
   width: 80%;
@@ -99,15 +100,13 @@ table {
 
 .articlePhotoWidth {
   width: 25%;
-  margin: 1.5% 0;
-  border-radius: 20px; }
+  margin: 0 10%;
+  border-radius: 20px;
+  float: left; }
 
 .articleBlock {
   border: 15px solid #f6f5f5;
   margin: 6% 3%; }
-
-.userArticle {
-  font-size: 2em; }
 
 .infoBlock {
   padding: 15% 0; }
@@ -129,7 +128,7 @@ table {
   float: left; }
 
 .articlePhotoHome {
-  width: 100%; }
+  width: 68%; }
 
 /*menu*/
 .logo {
@@ -169,7 +168,7 @@ a.logoLink {
 
 .header {
   width: 100%;
-  height: 80px;
+  height: 5em;
   background: linear-gradient(0deg, #e8b146, #fdde75);
   position: static;
   top: 0;
@@ -265,21 +264,21 @@ a.logoLink {
 .searchInput {
   position: absolute;
   z-index: 1;
-  top: 98%;
+  top: 135%;
   left: 22%;
-  width: 40%;
+  width: 42%;
   font-size: 2.5em;
-  height: 20.3%;
+  height: 30%;
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px; }
 
 .searchButton {
   position: absolute;
   z-index: 1;
-  top: 98.2%;
+  top: 135%;
   right: 21%;
-  width: 17%;
-  height: 21.5%;
+  width: 15%;
+  height: 33%;
   background-color: #fa6060;
   background-image: url("../images/loupe.png");
   background-repeat: no-repeat;
@@ -292,42 +291,36 @@ a.logoLink {
 .annonceTitle {
   position: relative;
   text-align: center;
-  top: 8%;
+  top: 4%;
   font-size: 2.5em;
-  color: #888787;
-  margin-left: 20%;
-  margin-right: 20%; }
+  color: #888787; }
 
 .content {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 15em;
   background-color: #f1f0f0; }
 
 .lastAnnonce {
-  display: inline-block;
-  width: 48%;
-  height: 50%;
-  margin-top: 15%;
-  margin-left: 10px;
+  width: 40%;
+  height: 70%;
+  margin: 5% 5% 0% 5%;
   z-index: 3;
   background-color: #FFFFFF;
-  border-radius: 10px; }
+  border-radius: 10px;
+  float: left;
+  text-align: center; }
 
 .annonce {
   position: relative;
-  top: 793px;
+  top: 45em;
   width: 100%;
-  height: 759px;
+  height: 47em;
   background-color: #f1f0f0; }
 
 .whyChoose {
-  position: relative;
-  width: 100%;
-  margin-top: 60%;
-  margin-bottom: 20%;
-  top: 20%;
-  height: 700px; }
+  margin-top: 95%;
+  margin-bottom: 5%; }
 
 .chooseImg {
   width: 62px;
@@ -391,7 +384,7 @@ hr {
   line-height: 55px; }
 
 /*end accueil*/
-/*page catégorie*/
+/*page cat├®gorie*/
 .searchWhere {
   background: #ffffff;
   color: #000000;
@@ -614,8 +607,8 @@ hr {
   width: 100%;
   height: 400px; }
 
-.infoArticle p {
-  font-size: 2em; }
+.infoArticle {
+  font-size: 1.5em; }
 
 .infoTitle {
   color: #555555;
@@ -913,6 +906,11 @@ form {
   background-color: #f9f9f9; }
 
 @media screen and (max-width: 640px) {
+  .articlePhotoWidth {
+    width: 80%;
+    margin: 0 10%;
+    float: none; }
+
   .profileContainer {
     text-align: center;
     margin-top: 5%;
@@ -1063,11 +1061,10 @@ form {
   .annonceTitle {
     position: relative;
     text-align: center;
-    top: 4%;
+    top: 0%;
     font-size: 25px;
     color: #888787;
-    margin-left: 20%;
-    margin-right: 20%; }
+    margin-bottom: 8%; }
 
   .content {
     position: relative;
@@ -1076,14 +1073,12 @@ form {
     background-color: #f1f0f0; }
 
   .lastAnnonce {
-    display: inline-block;
     width: 45%;
-    height: 35%;
-    margin-top: 15%;
-    margin-left: 10px;
+    height: 55%;
     z-index: 3;
     background-color: #FFFFFF;
-    border-radius: 10px; }
+    border-radius: 10px;
+    margin: 0 1% 0 3%; }
 
   .annonce {
     position: relative;
@@ -1228,7 +1223,7 @@ form {
     transform: translateX(0%); }
 
   /*end menu mobile */
-  /*page catégorie*/
+  /*page cat├®gorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;
@@ -2043,7 +2038,7 @@ form {
     transform: translateX(0px); }
 
   /*end menu mobile */
-  /*page catégorie*/
+  /*page cat├®gorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;

@@ -139,6 +139,11 @@ class Article
         $this->file = null;
     }
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $price;
+
     public function __construct()
     {
         $this->dateCreation = new \DateTime();
@@ -267,5 +272,28 @@ class Article
     public function getPath()
     {
         return $this->path;
+    }
+
+    /**
+     * Set price
+     *
+     * @param float $price
+     * @return Article
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * Get price
+     *
+     * @return float 
+     */
+    public function getPrice()
+    {
+        return $this->price;
     }
 }
