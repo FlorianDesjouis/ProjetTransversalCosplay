@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">C:\wamp\www\ProjetTransversalCosplay\app</parameter>
+    <parameter key="kernel.root_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\wamp\www\ProjetTransversalCosplay\app\logs</parameter>
+    <parameter key="kernel.cache_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -107,7 +107,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="security.secure_random.class">Symfony\Component\Security\Core\Util\SecureRandom</parameter>
     <parameter key="form.resolved_type_factory.class">Symfony\Component\Form\ResolvedFormTypeFactory</parameter>
@@ -165,7 +165,7 @@
     <parameter key="data_collector.form.extractor.class">Symfony\Component\Form\Extension\DataCollector\FormDataExtractor</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/profiler</parameter>
     <parameter key="profiler.storage.username"></parameter>
     <parameter key="profiler.storage.password"></parameter>
     <parameter key="profiler.storage.lifetime">86400</parameter>
@@ -189,7 +189,7 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/assetic/routing.yml</parameter>
+    <parameter key="router.resource">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
@@ -200,7 +200,7 @@
     <parameter key="debug.stopwatch.class">Symfony\Component\Stopwatch\Stopwatch</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.event_dispatcher.class">Symfony\Component\HttpKernel\Debug\TraceableEventDispatcher</parameter>
-    <parameter key="debug.container.dump">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="debug.controller_resolver.class">Symfony\Component\HttpKernel\Controller\TraceableControllerResolver</parameter>
     <parameter key="security.context.class">Symfony\Component\Security\Core\SecurityContext</parameter>
     <parameter key="security.user_checker.class">Symfony\Component\Security\Core\User\UserChecker</parameter>
@@ -390,7 +390,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -508,7 +508,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -580,7 +580,7 @@
     <parameter key="fos_rest.violation_formatter.class">FOS\RestBundle\Util\ViolationFormatter</parameter>
     <parameter key="fos_rest.request.param_fetcher.class">FOS\RestBundle\Request\ParamFetcher</parameter>
     <parameter key="fos_rest.request.param_fetcher.reader.class">FOS\RestBundle\Request\ParamReader</parameter>
-    <parameter key="fos_rest.cache_dir">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/fos_rest</parameter>
+    <parameter key="fos_rest.cache_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/fos_rest</parameter>
     <parameter key="fos_rest.routing.loader.default_format">null</parameter>
     <parameter key="fos_rest.routing.loader.include_format">true</parameter>
     <parameter key="fos_rest.serializer.serialize_null">false</parameter>
@@ -689,7 +689,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection">
       <parameter>FOSCommentBundle</parameter>
     </parameter>
@@ -701,11 +701,11 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">true</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">C:\wamp\www\ProjetTransversalCosplay\app/../web</parameter>
-    <parameter key="assetic.write_to">C:\wamp\www\ProjetTransversalCosplay\app/../web</parameter>
+    <parameter key="assetic.read_from">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/../web</parameter>
+    <parameter key="assetic.write_to">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">C:\ProgramData\Oracle\Java\javapath\java.EXE</parameter>
-    <parameter key="assetic.node.bin">C:\Program Files\nodejs\node.EXE</parameter>
+    <parameter key="assetic.node.bin">C:\Program Files\nodejs\\node.EXE</parameter>
     <parameter key="assetic.ruby.bin">C:\Ruby22-x64\bin\ruby.EXE</parameter>
     <parameter key="assetic.sass.bin">C:\Ruby22-x64\bin\sass.BAT</parameter>
     <parameter key="assetic.reactjsx.bin">/usr/bin/jsx</parameter>
@@ -840,7 +840,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:\wamp\www\ProjetTransversalCosplay\app/Resources</argument>
+                <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -873,7 +873,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:\wamp\www\ProjetTransversalCosplay\app/Resources</argument>
+                <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -886,7 +886,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>C:\wamp\www\ProjetTransversalCosplay\app</argument>
+                <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -917,7 +917,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>C:\wamp\www\ProjetTransversalCosplay\app/Resources</argument>
+      <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>724be845f9d4770896b59e827ad845508f8245cd</argument>
@@ -1039,343 +1039,343 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/translations</argument>
+        <argument key="cache_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.af.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ar.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ar.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ar.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ar.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ar.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ar.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ar.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ar.yml</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.az.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.az.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.az.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.az.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.bg.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.bg.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.bg.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.bg.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.bg.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.bg.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.bg.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.bg.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.bg.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.bg.yml</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ca.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ca.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ca.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ca.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ca.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ca.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ca.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ca.yml</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.cs.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.cs.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.cs.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.cs.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cs.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.cs.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.cs.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.cs.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.cs.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.cs.yml</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cy.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.da.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.da.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.da.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.da.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.da.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.da.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.da.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.da.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.da.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.da.yml</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.de.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.de.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.de.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.de.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.de.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.de.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.de.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.de.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.de.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.de.yml</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.el.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.el.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.el.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.el.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.el.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.el.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.el.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.el.yml</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.en.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.en.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.en.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.en.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.en.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.en.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.en.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.en.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.en.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.en.yml</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.es.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.es.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.es.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.es.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.es.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.es.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.es.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.es.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.es.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.es.yml</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.et.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.et.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.et.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.et.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.et.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.et.yml</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.eu.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.eu.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.eu.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.eu.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.eu.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.eu.yml</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fa.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fa.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fa.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fa.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fa.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fa.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fa.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fa.yml</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fi.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fi.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fi.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fi.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fi.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fi.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fi.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fi.yml</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fr.yml</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.gl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.gl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.gl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.he.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.he.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.he.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.he.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.he.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.he.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.he.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.he.yml</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hr.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hr.yml</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hu.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hu.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hu.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.hu.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hu.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hu.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hu.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hu.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hu.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.hu.yml</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hy.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hy.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.id.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.id.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.id.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.id.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.id.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.id.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.id.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.id.yml</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.it.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.it.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.it.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.it.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.it.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.it.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.it.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.it.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.it.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.it.yml</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ja.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ja.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ja.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.ja.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ja.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ja.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ja.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ja.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ja.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.ja.yml</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lb.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lb.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lb.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lb.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lb.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lb.yml</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lt.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lt.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lt.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lt.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lt.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lt.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lt.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lt.yml</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.mn.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.mn.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.mn.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.mn.yml</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.nl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nl.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nl.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.nl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.nl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.nl.yml</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nn.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.no.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.no.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.no.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pl.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pl.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.pl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.pl.yml</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.pt.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.pt.yml</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_BR.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt_BR.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt_BR.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_BR.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt_BR.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt_BR.yml</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ro.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ro.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ro.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ro.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ro.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ro.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ro.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ro.yml</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ru.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ru.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ru.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.ru.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ru.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ru.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ru.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ru.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ru.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.ru.yml</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sk.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sk.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sk.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sk.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sk.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sk.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sk.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sk.yml</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sl.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sl.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sl.yml</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sq.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Cyrl.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sr_Cyrl.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Cyrl.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sr_Cyrl.yml</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Latn.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sr_Latn.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sr_Latn.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sr_Latn.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Latn.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sr_Latn.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sr_Latn.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.sr_Latn.yml</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sv.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sv.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sv.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sv.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sv.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sv.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sv.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sv.yml</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.th.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.th.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.th.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.th.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.th.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.th.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.th.yml</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.tr.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.tr.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.tr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.tr.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.tr.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.tr.yml</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.uk.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.uk.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.uk.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.uk.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.uk.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.uk.yml</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.vi.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.vi.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.vi.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.vi.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.vi.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.vi.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.vi.yml</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.zh_CN.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.zh_CN.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.zh_CN.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.zh_CN.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.zh_CN.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.zh_CN.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.zh_CN.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.zh_CN.yml</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_TW.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lv.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lv.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lv.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lv.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lv.yml</argument>
           </argument>
           <argument key="pt_PT" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_PT.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_PT.xlf</argument>
           </argument>
           <argument key="ua" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ua.xlf</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ua.xlf</argument>
           </argument>
           <argument key="ky" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ky.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ky.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ky.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ky.yml</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nb.yml</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nb.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nb.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nb.yml</argument>
           </argument>
           <argument key="fa_IR" type="collection">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fa_IR.yml</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/translations\FOSCommentBundle.fa_IR.yml</argument>
           </argument>
         </argument>
       </argument>
@@ -1900,7 +1900,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev</argument>
+      <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev</argument>
     </service>
     <service id="templating.helper.assets" class="Symfony\Bundle\FrameworkBundle\Templating\Helper\AssetsHelper">
       <tag name="templating.helper" alias="assets"/>
@@ -1939,9 +1939,9 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
-          <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
-          <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle\Resources\config\validation.xml</argument>
+          <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
+          <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
+          <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle\Resources\config\validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1962,7 +1962,7 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
       <factory class="Symfony\Component\Validator\Validation" method="createValidatorBuilder"/>
     </service>
@@ -1983,7 +1983,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/profiler</argument>
+          <argument>file:D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/profiler</argument>
           <argument></argument>
           <argument></argument>
           <argument>86400</argument>
@@ -2460,7 +2460,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5745905ea61743.79266838</argument>
+            <argument>5746d25e594d42.75091413</argument>
           </service>
         </argument>
       </argument>
@@ -2749,7 +2749,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>5745905ea61743.79266838</argument>
+            <argument>5746d25e594d42.75091413</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2852,7 +2852,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">filename</argument>
-        <argument key="cache">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/twig</argument>
+        <argument key="cache">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2927,7 +2927,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\app</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -3119,7 +3119,7 @@
       <argument>twig.controller.exception:showAction</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>C:\wamp\www\ProjetTransversalCosplay\app\logs/dev.log</argument>
+      <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -3225,17 +3225,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_00f0edd1b767d43be2598fd1ba9d7214afc51ee42e1fc3aacf1fb01f36dbf05e</argument>
+        <argument>sf2orm_default_dfb276e57e90b0f8b20ce94f8ce9d9b030246224f42940704dcae78267012534</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_00f0edd1b767d43be2598fd1ba9d7214afc51ee42e1fc3aacf1fb01f36dbf05e</argument>
+        <argument>sf2orm_default_dfb276e57e90b0f8b20ce94f8ce9d9b030246224f42940704dcae78267012534</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_00f0edd1b767d43be2598fd1ba9d7214afc51ee42e1fc3aacf1fb01f36dbf05e</argument>
+        <argument>sf2orm_default_dfb276e57e90b0f8b20ce94f8ce9d9b030246224f42940704dcae78267012534</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -3270,7 +3270,7 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>C:\wamp\www\ProjetTransversalCosplay\src\DesguizeBundle\Entity</argument>
+                        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\src\DesguizeBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3280,7 +3280,7 @@
                   <argument type="service">
                     <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
                       <argument type="collection">
-                        <argument key="C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle\Resources\config\doctrine">FOS\CommentBundle\Entity</argument>
+                        <argument key="D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle\Resources\config\doctrine">FOS\CommentBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -3295,7 +3295,7 @@
                       <argument type="service">
                         <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                           <argument type="collection">
-                            <argument key="C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
+                            <argument key="D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
                           </argument>
                           <argument>.orm.xml</argument>
                         </service>
@@ -3308,7 +3308,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/doctrine/orm/Proxies</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -4049,7 +4049,7 @@
             </argument>
             <argument type="service">
               <service class="Assetic\Cache\ConfigCache" public="false">
-                <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/assetic/config</argument>
+                <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/assetic/config</argument>
               </service>
             </argument>
             <argument>true</argument>
@@ -4066,7 +4066,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FOSCommentBundle</argument>
-                  <argument>C:\wamp\www\ProjetTransversalCosplay\app/Resources/FOSCommentBundle/views</argument>
+                  <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/Resources/FOSCommentBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -4074,7 +4074,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FOSCommentBundle</argument>
-                  <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/views</argument>
+                  <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -4090,7 +4090,7 @@
             <tag name="assetic.formula_resource" loader="twig"/>
             <argument type="service" id="templating.loader"/>
             <argument></argument>
-            <argument>C:\wamp\www\ProjetTransversalCosplay\app/Resources/views</argument>
+            <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -4105,7 +4105,7 @@
           <factory service="service_container" method="getParameterBag"/>
         </service>
       </argument>
-      <argument>C:\wamp\www\ProjetTransversalCosplay\app/../web</argument>
+      <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service">
@@ -4122,7 +4122,7 @@
       <argument type="service" id="assetic.asset_manager"/>
       <argument type="service">
         <service class="Assetic\Cache\FilesystemCache" public="false">
-          <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/assetic/assets</argument>
+          <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/assetic/assets</argument>
         </service>
       </argument>
       <argument>false</argument>
@@ -4368,7 +4368,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/sessions</argument>
+      <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
@@ -4392,9 +4392,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/assetic/routing.yml</argument>
+      <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/assetic/routing.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\ProjetTransversalCosplay\app\cache\dev</argument>
+        <argument key="cache_dir">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -4419,7 +4419,7 @@
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/annotations</argument>
+          <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
@@ -4443,50 +4443,50 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\src\DesguizeBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\src\DesguizeBundle/Resources/views</argument>
         <argument>Desguize</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/views</argument>
         <argument>FOSComment</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\app/Resources/views</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
+        <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
@@ -4657,23 +4657,23 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="DesguizeBundle">C:\wamp\www\ProjetTransversalCosplay\src\DesguizeBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\CommentBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\AsseticBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="DesguizeBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\src\DesguizeBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\CommentBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\AsseticBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -4684,23 +4684,23 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="DesguizeBundle">C:\wamp\www\ProjetTransversalCosplay\src\DesguizeBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\CommentBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\AsseticBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="DesguizeBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\src\DesguizeBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\CommentBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\AsseticBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -4711,23 +4711,23 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="DesguizeBundle">C:\wamp\www\ProjetTransversalCosplay\src\DesguizeBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\UserBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\CommentBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\AsseticBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">C:\wamp\www\ProjetTransversalCosplay\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\doctrine\doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="DesguizeBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\src\DesguizeBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\UserBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\user-bundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\rest-bundle\FOS\RestBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\CommentBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\friendsofsymfony\comment-bundle\FOS\CommentBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\jms\serializer-bundle\JMS\SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\AsseticBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\assetic-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\vendor\sensio\generator-bundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -4773,7 +4773,7 @@
           <call method="setCache">
             <argument type="service">
               <service class="Metadata\Cache\FileCache" public="false">
-                <argument>C:\wamp\www\ProjetTransversalCosplay\app\cache\dev/jms_serializer</argument>
+                <argument>D:\wamp\www\Cours\ProjetTransversalCosplay\ProjetTransversalCosplay\app\cache\dev/jms_serializer</argument>
               </service>
             </argument>
           </call>

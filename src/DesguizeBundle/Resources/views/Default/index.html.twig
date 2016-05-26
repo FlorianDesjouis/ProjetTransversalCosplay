@@ -9,7 +9,7 @@
                 <button class="searchButton" type="submit"></button>
             </div>
             <div class="annonce">
-                <div class="annonceTitle">Les Dernières annonces mises en ligne</div>
+                <div class="annonceTitle">Les dernières annonces mises en ligne</div>
                 	{% for article in articles %}
 		                <div class="lastAnnonce">
 		                <a href="{{ path('article_show', { 'id': article.id }) }}">

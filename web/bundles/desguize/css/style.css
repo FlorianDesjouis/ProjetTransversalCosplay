@@ -64,15 +64,16 @@ table {
   margin-bottom: 3%; }
 
 .inputForm {
-  width: 80%;
+  width: 9%;
   height: 2.5rem;
   border: none;
   background-color: #f6f5f5;
   font-family: Lato;
-  padding-left: 5%; }
+  padding-left: 5%;
+  border-radius: 5px; }
 
 .buttonForm {
-  width: 26%;
+  width: 15%;
   border: none;
   height: 4rem;
   background: linear-gradient(0deg, #cb4647, #f96060);
@@ -128,7 +129,8 @@ table {
   float: left; }
 
 .articlePhotoHome {
-  width: 68%; }
+  width: 49%;
+  border-radius: 10px; }
 
 /*menu*/
 .logo {
@@ -217,7 +219,7 @@ a.logoLink {
   text-align: center;
   border-radius: 5px;
   padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding-bottom: 0;
   margin-top: 1%;
   text-decoration: none; }
 
@@ -319,7 +321,7 @@ a.logoLink {
   background-color: #f1f0f0; }
 
 .whyChoose {
-  margin-top: 95%;
+  margin-top: 74%;
   margin-bottom: 5%; }
 
 .chooseImg {
@@ -382,9 +384,12 @@ hr {
   color: #FFFFFF;
   text-align: center;
   line-height: 55px; }
+  .footerText a {
+    text-decoration: none;
+    color: #ffffff; }
 
 /*end accueil*/
-/*page cat├®gorie*/
+/*page catégorie*/
 .searchWhere {
   background: #ffffff;
   color: #000000;
@@ -968,7 +973,9 @@ form {
     float: left; }
 
   .articlePhotoHome {
-    width: 100%; }
+    margin-top: 5%;
+    width: 54%;
+    border-radius: 10px; }
 
   /* Menu */
   .logo {
@@ -983,7 +990,7 @@ form {
     position: absolute;
     display: inline-block;
     right: 5%;
-    top: 28px;
+    top: 3.5%;
     width: 7%;
     height: auto; }
 
@@ -1061,7 +1068,7 @@ form {
   .annonceTitle {
     position: relative;
     text-align: center;
-    top: 0%;
+    top: 3%;
     font-size: 25px;
     color: #888787;
     margin-bottom: 8%; }
@@ -1074,15 +1081,15 @@ form {
 
   .lastAnnonce {
     width: 45%;
-    height: 55%;
+    height: 36%;
     z-index: 3;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 0 1% 0 3%; }
+    margin: 14% 1% 0 3%; }
 
   .annonce {
     position: relative;
-    top: 250px;
+    top: 53%;
     width: 100%;
     height: 400px;
     background-color: #f1f0f0; }
@@ -1090,7 +1097,7 @@ form {
   .whyChoose {
     position: relative;
     width: 100%;
-    margin-top: 95%;
+    margin-top: 66%;
     top: 20%;
     height: 700px; }
 
@@ -1204,7 +1211,7 @@ form {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    margin-bottom: 7%; }
+    margin-bottom: 6.5%; }
     .header__icon:after {
       content: '';
       position: absolute;
@@ -1223,7 +1230,7 @@ form {
     transform: translateX(0%); }
 
   /*end menu mobile */
-  /*page cat├®gorie*/
+  /*page catégorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;
@@ -1355,8 +1362,8 @@ form {
     text-align: center;
     padding-top: 3%;
     width: 100%;
-    height: 550px;
-    margin-bottom: 10%;
+    height: 50%;
+    margin-bottom: 2%;
     background-color: #eeeeee; }
 
   .fleche {
@@ -1446,8 +1453,7 @@ form {
     margin-top: 5%; }
 
   .title {
-    margin-top: -29px;
-    margin-left: 54px;
+    margin-top: 2px;
     color: #3d3d3d;
     font-size: 1.2em;
     font-weight: bold; }
@@ -1775,7 +1781,8 @@ form {
     float: left; }
 
   .articlePhotoHome {
-    width: 100%; }
+    width: 48%;
+    border-radius: 10px; }
 
   /* Menu */
   .logo {
@@ -1883,17 +1890,17 @@ form {
 
   .lastAnnonce {
     display: inline-block;
-    width: 48%;
+    width: 38%;
     height: 50%;
     margin-top: 15%;
-    margin-left: 10px;
+    margin-left: 6.5%;
     z-index: 3;
     background-color: #FFFFFF;
     border-radius: 10px; }
 
   .annonce {
     position: relative;
-    top: 511px;
+    top: 115%;
     width: 100%;
     height: 493px;
     background-color: #f1f0f0; }
@@ -1901,7 +1908,7 @@ form {
   .whyChoose {
     position: relative;
     width: 100%;
-    margin-top: 78%;
+    margin-top: 80%;
     margin-bottom: 45%;
     top: 20%;
     height: 700px; }
@@ -2038,7 +2045,7 @@ form {
     transform: translateX(0px); }
 
   /*end menu mobile */
-  /*page cat├®gorie*/
+  /*page catégorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;
