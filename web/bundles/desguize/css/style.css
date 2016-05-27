@@ -95,7 +95,7 @@ table {
   font-size: 2em; }
 
 .articlePhoto {
-  width: 70%;
+  width: 50%;
   margin: 1.5% 0;
   border-radius: 20px; }
 
@@ -958,8 +958,8 @@ form {
     font-size: 110%; }
 
   .articlePhoto {
-    width: 75%;
-    margin: 8% 0%; }
+    width: 220%;
+    margin: 8% 0; }
 
   .articleBlock {
     border: 15px solid #f6f5f5;
