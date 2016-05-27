@@ -86,9 +86,9 @@ table {
 
 .profilePhoto {
   border-radius: 73%;
-  width: 48%;
+  width: 12%;
   border: 4px solid #efbf55;
-  margin: 8% 0%; }
+  margin: 3% 0; }
 
 .infoProfile {
   font-weight: bold;
