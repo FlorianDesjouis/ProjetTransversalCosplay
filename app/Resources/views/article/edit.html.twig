@@ -1,22 +1,24 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Article edit</h1>
-
+<div class='profileContainer'>
+    <h1 class='profileTitle'>Modifier mon article</h1>
+<div class='postAnnonceBlock'>
 <form action="#" method="post" {{ form_enctype(edit_form) }}>
     {{ form_widget(edit_form) }}
-
-    <input type="submit" value="Edit" />
+</div>
+  <input type="submit" class='buttonForm' value="Modifier" />
 </form>
 
     <ul>
         <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
+            <a href="{{ path('article_index') }}"><button class='buttonForm'>Retour</button></a>
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <input class='buttonForm' type="submit" value="Supprimer">
             {{ form_end(delete_form) }}
         </li>
     </ul>
+</div>
 {% endblock %}
