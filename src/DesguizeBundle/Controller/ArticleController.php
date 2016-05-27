@@ -79,12 +79,19 @@ class ArticleController extends Controller
 
         $em = $this->getDoctrine()->getEntityManager();
         $connection = $em->getConnection();
-        $statement = $connection->prepare("SELECT article.id, name, description, dateCreation, userId, path, price, username, address, birthdate, email, firstname, lastname, phone_number, post_code, town  FROM article JOIN user ON userId = user.Id WHERE article.id=".$article->getId());
+        $statement = $connection->prepare("SELECT article.id, name, description, dateCreation, article.userId, path, price, username, address, birthdate, email, firstname, lastname, phone_number, post_code, town FROM article JOIN user ON userId = user.Id WHERE article.id=".$article->getId());
         $statement->execute();
         $results = $statement->fetchAll();
 
+        $em2 = $this->getDoctrine()->getEntityManager();
+        $connection2 = $em2->getConnection();
+        $statement2 = $connection2->prepare("SELECT content, dateComment, username, address, birthdate, email, firstname, lastname, phone_number, post_code, town FROM comment JOIN user ON user.id = userId JOIN article ON article.id = articleId WHERE articleId =".$article->getId());
+        $statement2->execute();
+        $results2 = $statement->fetchAll();
+
         return $this->render('article/show.html.twig', array(
             'articles' => $results,
+            'comments' => $results2,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -156,3 +163,5 @@ class ArticleController extends Controller
         ;
     }
 }
+
+/*SELECT content, dateComment, username, address, birthdate, email, firstname, lastname, phone_number, post_code, town FROM comment JOIN user ON user.id = userId JOIN article ON article.id = articleId WHERE articleId =*/

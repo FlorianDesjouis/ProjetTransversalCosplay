@@ -29,6 +29,9 @@
                     </ul>
                 {% else %}
                     <a href=""><button class='buttonForm'>Commander</button></a>
+                    {% for comment in comments %}
+                        {{ comment.username }}
+                    {% endfor %}
                 {% endif %}
             </div>
         </div>

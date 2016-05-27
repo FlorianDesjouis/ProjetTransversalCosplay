@@ -1,17 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Article creation</h1>
-
-<form action="#" method="post" {{ form_enctype(form) }}>
-    {{ form_widget(form) }}
-
-    <input type="submit" value="Uploader" />
-</form>
-
+<div class='profileContainer'>
+    <h1 class='profileTitle'>Ajouter un article</h1>
+<div class='postAnnonceBlock'>
+	<form action="#" method="post" {{ form_enctype(form) }}>
+	    {{ form_widget(form) }}
+</div>
+	    <input type="submit" class='buttonForm' value="Ajouter" />
+	</form>
     <ul>
         <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
+            <a href="{{ path('article_index') }}">
+            <button class='buttonForm'>Retour</button>
+            </a>
         </li>
     </ul>
+</div>
 {% endblock %}

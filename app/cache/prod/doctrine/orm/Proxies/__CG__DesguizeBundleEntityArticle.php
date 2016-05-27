@@ -108,10 +108,10 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId', 'path', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'file');
+            return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId', 'path', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'file', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'price');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'file');
+        return array('__isInitialized__', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'id', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'name', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'description', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'dateCreation', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'userId', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'file', '' . "\0" . 'DesguizeBundle\\Entity\\Article' . "\0" . 'price');
     }
 
     /**
@@ -407,6 +407,28 @@ class Article extends \DesguizeBundle\Entity\Article implements \Doctrine\ORM\Pr
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPath', array());
 
         return parent::getPath();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPrice($price)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPrice', array($price));
+
+        return parent::setPrice($price);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPrice()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPrice', array());
+
+        return parent::getPrice();
     }
 
 }

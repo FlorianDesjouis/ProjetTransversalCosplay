@@ -72,6 +72,35 @@ table {
   padding-left: 5%;
   border-radius: 5px; }
 
+.registerBlock input {
+  width: 9%;
+  height: 2.5rem;
+  border: none;
+  background-color: #f6f5f5;
+  font-family: Lato;
+  padding-left: 5%;
+  border-radius: 5px;
+  margin: 1%; }
+
+.postAnnonceBlock input {
+  width: 20%;
+  height: 2.5rem;
+  border: none;
+  background-color: #f6f5f5;
+  font-family: Lato;
+  padding-left: 5%;
+  border-radius: 5px;
+  margin: 1%; }
+
+#keiruaprod_applicationbundle_identitypicturetype_file {
+  background-color: initial; }
+
+#keiruaprod_applicationbundle_identitypicturetype_description {
+  height: 6rem;
+  width: 22%;
+  border: none;
+  background-color: #f6f5f5; }
+
 .buttonForm {
   width: 15%;
   border: none;
@@ -389,7 +418,7 @@ hr {
     color: #ffffff; }
 
 /*end accueil*/
-/*page catégorie*/
+/*page cat├®gorie*/
 .searchWhere {
   background: #ffffff;
   color: #000000;
@@ -911,6 +940,16 @@ form {
   background-color: #f9f9f9; }
 
 @media screen and (max-width: 640px) {
+  #keiruaprod_applicationbundle_identitypicturetype_description {
+    height: 5rem;
+    width: 65%; }
+
+  .registerBlock input {
+    width: 50%; }
+
+  .postAnnonceBlock input {
+    width: 50%; }
+
   .articlePhotoWidth {
     width: 80%;
     margin: 0 10%;
@@ -1230,7 +1269,7 @@ form {
     transform: translateX(0%); }
 
   /*end menu mobile */
-  /*page catégorie*/
+  /*page cat├®gorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;
@@ -1724,6 +1763,15 @@ form {
   .similarProduct {
     background-color: #f9f9f9; } }
 @media screen and (min-width: 641px) and (max-width: 1024px) {
+  #keiruaprod_applicationbundle_identitypicturetype_description {
+    width: 40%; }
+
+  .registerBlock input {
+    width: 25%; }
+
+  .postAnnonceBlock input {
+    width: 25%; }
+
   .profileContainer {
     text-align: center;
     margin-top: 5%;
@@ -2045,7 +2093,7 @@ form {
     transform: translateX(0px); }
 
   /*end menu mobile */
-  /*page catégorie*/
+  /*page cat├®gorie*/
   .searchWhere {
     background: #e8b146;
     color: #FFFFFF;
