@@ -56,7 +56,7 @@ class User extends BaseUser
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $photoProfile = 'defaultProfilePhoto.jpg';
+    private $photoProfile = 'defaultProfilePhoto.png';
 
     public function __construct()
     {
